@@ -1,0 +1,1006 @@
+{
+  "ade": 1,
+  "main": {
+    "title": "How your phone knows where you are",
+    "paragraph": "GPS is a {constellation} of more than 30 satellites about 20,200 kilometres up, each carrying {atomic clocks}.[1] Every satellite keeps broadcasting its exact time and its exact position. Your phone hears four or more of them and, from each signal's {travel time}, works out its distance to each satellite; {trilateration} then turns those distances into a position.[2] The phone's own clock is cheap and slightly off, so every distance carries the same unknown error, which is why each one is called a {pseudorange}. A fourth satellite supplies the extra equation that solves for that clock error, so GPS needs four satellites, not three.[3] One more correction keeps it honest: by {relativity}, clocks on the satellites gain about 38 microseconds a day on clocks on the ground, which would add roughly 10 kilometres of error every day, so they are set to tick slower before launch.[4]",
+    "terms": [
+      {
+        "term": "constellation",
+        "definition": "A set of satellites spread around the Earth so that enough of them are always overhead. GPS keeps at least 24 in six orbits, circling the Earth every 12 hours.",
+        "part": "C1",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "term": "atomic clocks",
+        "definition": "Clocks that count the vibrations of atoms, which never vary. They drift by far less than a microsecond a day, which is what makes a satellite's time stamp trustworthy.",
+        "part": "C1",
+        "sources": [
+          5,
+          1
+        ]
+      },
+      {
+        "term": "pseudorange",
+        "definition": "A distance worked out with a clock that may be off. All of a phone's pseudoranges share the same clock error, so the error can be solved for along with the position.",
+        "part": "C4",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "term": "relativity",
+        "definition": "Einstein's finding that time runs at different rates for different observers. Satellite clocks run faster because gravity is weaker up there, and slightly slower because they move fast; the net gain is about 38 microseconds a day.",
+        "part": "C2",
+        "sources": [
+          4
+        ]
+      }
+    ],
+    "figure": {
+      "width": 1000,
+      "height": 480,
+      "label": "Four satellites broadcast their time and position; the signals reach your phone, which solves for its position, height and its own clock error; the satellite clocks are corrected for relativity.",
+      "parts": [
+        {
+          "id": "sat1",
+          "kind": "satellite",
+          "x": 40,
+          "y": 40,
+          "w": 140,
+          "h": 70,
+          "props": {
+            "label": "sat 1"
+          },
+          "tag": "C1",
+          "caption": "Sends its exact time and position",
+          "explainer": {
+            "name": "A GPS satellite",
+            "what": "One of the constellation, about 20,200 km up. It carries atomic clocks and broadcasts its time and its position again and again.",
+            "connects": [
+              {
+                "tag": "C3",
+                "text": "its signal heads for your phone"
+              },
+              {
+                "tag": "C2",
+                "text": "its clocks are corrected for relativity"
+              }
+            ],
+            "sources": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "sat2",
+          "kind": "satellite",
+          "x": 280,
+          "y": 40,
+          "w": 140,
+          "h": 70,
+          "props": {
+            "label": "sat 2"
+          }
+        },
+        {
+          "id": "sat3",
+          "kind": "satellite",
+          "x": 520,
+          "y": 40,
+          "w": 140,
+          "h": 70,
+          "props": {
+            "label": "sat 3"
+          }
+        },
+        {
+          "id": "sat4",
+          "kind": "satellite",
+          "x": 760,
+          "y": 40,
+          "w": 140,
+          "h": 70,
+          "props": {
+            "label": "sat 4"
+          },
+          "tag": "C6",
+          "corner": "tr",
+          "caption": "The fourth fixes your phone's clock",
+          "explainer": {
+            "name": "The fourth satellite",
+            "what": "Three distances would be enough if the phone's clock were perfect. It is not, so a fourth signal adds the equation that solves for the clock error.",
+            "connects": [
+              {
+                "tag": "C4",
+                "text": "gives the phone a fourth equation"
+              },
+              {
+                "tag": "L2 B3",
+                "text": "three alone would fix the place"
+              }
+            ],
+            "sources": [
+              3,
+              2
+            ]
+          },
+          "motion": {
+            "order": 2,
+            "description": "The fourth satellite's signal lights up as the clock error is solved."
+          }
+        },
+        {
+          "id": "packet",
+          "kind": "chip",
+          "x": 60,
+          "y": 170,
+          "w": 110,
+          "h": 24,
+          "props": {
+            "text": "time + place",
+            "badgeAt": [
+              170,
+              194
+            ]
+          },
+          "tag": "C3",
+          "caption": "One signal: its send time and position",
+          "explainer": {
+            "name": "The signal",
+            "what": "A radio message from one satellite: the moment it was sent and where the satellite was. Its travel time gives a distance.",
+            "connects": [
+              {
+                "tag": "C1",
+                "text": "sent by the satellite"
+              },
+              {
+                "tag": "L1 A3",
+                "text": "travels like the radio signal in L1"
+              },
+              {
+                "tag": "C4",
+                "text": "timed by the phone"
+              }
+            ],
+            "sources": [
+              2
+            ]
+          },
+          "motion": {
+            "order": 1,
+            "description": "A signal travels from satellite 1 down to the phone."
+          }
+        },
+        {
+          "id": "fix",
+          "kind": "dial",
+          "x": 40,
+          "y": 330,
+          "w": 220,
+          "h": 62,
+          "props": {
+            "label": "relativity fix",
+            "value": "-38 µs/day",
+            "captionBelow": true
+          },
+          "tag": "C2",
+          "corner": "tr",
+          "caption": "Clocks set slow to cancel relativity",
+          "explainer": {
+            "name": "Relativity correction",
+            "what": "Without it the satellite clocks would run 38 microseconds a day fast, and positions would drift by about 10 km a day. The clocks are tuned slow before launch to cancel it.",
+            "connects": [
+              {
+                "tag": "C1",
+                "text": "applied to every satellite clock"
+              }
+            ],
+            "sources": [
+              4
+            ]
+          }
+        },
+        {
+          "id": "phone",
+          "kind": "terminal",
+          "x": 400,
+          "y": 320,
+          "w": 200,
+          "h": 110,
+          "props": {
+            "lines": [
+              "4 signals in",
+              "solve x, y, z, t"
+            ],
+            "captionBelow": true
+          },
+          "tag": "C4",
+          "corner": "tr",
+          "caption": "Your phone times all four",
+          "explainer": {
+            "name": "Your phone",
+            "what": "Measures each signal's travel time, turns it into a pseudorange, and solves four equations for its position and its own clock error.",
+            "connects": [
+              {
+                "tag": "C3",
+                "text": "receives the signals"
+              },
+              {
+                "tag": "C6",
+                "text": "the fourth fixes its clock"
+              },
+              {
+                "tag": "C5",
+                "text": "the answer"
+              }
+            ],
+            "sources": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "result",
+          "kind": "list",
+          "x": 700,
+          "y": 300,
+          "w": 260,
+          "h": 175,
+          "props": {
+            "items": [
+              "lat 51.5072 N",
+              "lon 0.1276 W",
+              "height 35 m",
+              "clock error solved"
+            ],
+            "lit": 3
+          },
+          "tag": "C5",
+          "corner": "tr",
+          "caption": "Position, height and the true time",
+          "explainer": {
+            "name": "The fix",
+            "what": "Latitude, longitude, height, and the phone's clock error. A phone is usually accurate to within a few metres in the open.",
+            "connects": [
+              {
+                "tag": "C4",
+                "text": "solved by the phone"
+              }
+            ],
+            "sources": [
+              6
+            ]
+          },
+          "motion": {
+            "order": 3,
+            "description": "The solved clock error slides in as the last line of the fix."
+          }
+        }
+      ],
+      "connections": [
+        {
+          "from": "sat1",
+          "to": "phone",
+          "points": [
+            [
+              110,
+              110
+            ],
+            [
+              110,
+              260
+            ],
+            [
+              430,
+              260
+            ],
+            [
+              430,
+              320
+            ]
+          ],
+          "flow": true,
+          "note": "radio, at light speed",
+          "noteAt": [
+            190,
+            252
+          ]
+        },
+        {
+          "from": "sat2",
+          "to": "phone",
+          "points": [
+            [
+              350,
+              110
+            ],
+            [
+              350,
+              230
+            ],
+            [
+              470,
+              230
+            ],
+            [
+              470,
+              320
+            ]
+          ]
+        },
+        {
+          "from": "sat3",
+          "to": "phone",
+          "points": [
+            [
+              590,
+              110
+            ],
+            [
+              590,
+              230
+            ],
+            [
+              530,
+              230
+            ],
+            [
+              530,
+              320
+            ]
+          ]
+        },
+        {
+          "from": "sat4",
+          "to": "phone",
+          "points": [
+            [
+              830,
+              110
+            ],
+            [
+              830,
+              260
+            ],
+            [
+              570,
+              260
+            ],
+            [
+              570,
+              320
+            ]
+          ],
+          "flow": true
+        },
+        {
+          "from": "phone",
+          "to": "result",
+          "points": [
+            [
+              600,
+              375
+            ],
+            [
+              700,
+              375
+            ]
+          ],
+          "note": "position solved",
+          "noteAt": [
+            612,
+            366
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "NASA: GPS",
+        "kind": "page",
+        "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/gps/"
+      },
+      {
+        "title": "Penn State GEOG 160: 5.2 Global Positioning Systems",
+        "kind": "page",
+        "url": "https://courses.ems.psu.edu/geog160/node/1923"
+      },
+      {
+        "title": "Pseudorange (Wikipedia)",
+        "kind": "page",
+        "url": "https://en.wikipedia.org/wiki/Pseudorange"
+      },
+      {
+        "title": "Richard Pogge, Ohio State University: Real-world relativity, the GPS navigation system",
+        "kind": "page",
+        "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit5/gps.html"
+      },
+      {
+        "title": "NIST: Atomic clocks",
+        "kind": "page",
+        "url": "https://www.nist.gov/atomic-clocks"
+      },
+      {
+        "title": "GPS.gov: GPS accuracy",
+        "kind": "page",
+        "url": "https://www.gps.gov/gps-accuracy"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "L1",
+      "question": "Do you fully understand how a signal's travel time tells you a distance?",
+      "title": "Distance from travel time",
+      "paragraph": "You can measure a distance without a ruler if you know how fast something moves and how long it took to arrive. In a storm, count the seconds between the flash and the {thunder}: sound covers about a kilometre every three seconds, so the count tells you how far away the lightning struck.[1] The same works for a {radio signal}, which moves at the {speed of light}, almost 300,000 kilometres per second.[2] Distance is speed multiplied by {travel time}. Radio is so fast that a single {microsecond}, one millionth of a second, already stands for 300 metres. That makes the clocks critical: if the sender's and the receiver's clocks disagree by one microsecond, the distance comes out 300 metres wrong.[3]",
+      "terms": [
+        {
+          "term": "thunder",
+          "definition": "The sound of a lightning strike. Light from the flash reaches you almost at once, while the sound travels at about 343 metres per second, so the delay between them grows with distance.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "radio signal",
+          "definition": "A message carried by radio waves, a kind of light our eyes cannot see. Phones, radios and satellites all talk this way.",
+          "part": "A3",
+          "sources": [
+            4
+          ]
+        },
+        {
+          "term": "speed of light",
+          "definition": "The speed at which light and radio waves travel through empty space: exactly 299,792,458 metres per second. Nothing carries a signal faster.",
+          "part": "A3",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "term": "travel time",
+          "definition": "How long a signal takes from the moment it is sent to the moment it arrives: the arrival time minus the send time, read from two clocks.",
+          "part": "A2",
+          "sources": [
+            3
+          ]
+        },
+        {
+          "term": "microsecond",
+          "definition": "One millionth of a second. At the speed of light a signal covers about 300 metres in that time.",
+          "part": "A4",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "figure": {
+        "width": 1000,
+        "height": 440,
+        "label": "A sender's clock and a receiver's clock; a radio signal crosses between them; the travel time times the speed of light gives 300 metres; a clock error of one microsecond doubles it.",
+        "parts": [
+          {
+            "id": "sender",
+            "kind": "dial",
+            "x": 40,
+            "y": 40,
+            "w": 200,
+            "h": 62,
+            "props": {
+              "label": "sent at",
+              "value": "0.000000 s"
+            },
+            "tag": "A1",
+            "corner": "tr",
+            "caption": "The time the signal leaves",
+            "explainer": {
+              "name": "Sender's clock",
+              "what": "The sender stamps the signal with the moment it leaves. Here that is time zero.",
+              "connects": [
+                {
+                  "tag": "A3",
+                  "text": "starts the signal on its way"
+                },
+                {
+                  "tag": "A2",
+                  "text": "must agree with the receiver's clock"
+                }
+              ],
+              "sources": [
+                3
+              ]
+            }
+          },
+          {
+            "id": "receiver",
+            "kind": "dial",
+            "x": 760,
+            "y": 40,
+            "w": 200,
+            "h": 62,
+            "props": {
+              "label": "arrived at",
+              "value": "0.000001 s"
+            },
+            "tag": "A2",
+            "corner": "tr",
+            "caption": "The time the signal arrives",
+            "explainer": {
+              "name": "Receiver's clock",
+              "what": "The receiver notes when the signal arrives. The difference from the send time is the travel time: here one microsecond.",
+              "connects": [
+                {
+                  "tag": "A1",
+                  "text": "subtract the send time"
+                },
+                {
+                  "tag": "A4",
+                  "text": "the difference becomes a distance"
+                }
+              ],
+              "sources": [
+                3
+              ]
+            }
+          },
+          {
+            "id": "signal",
+            "kind": "chip",
+            "x": 430,
+            "y": 59,
+            "w": 140,
+            "h": 24,
+            "props": {
+              "text": "radio signal",
+              "badgeAt": [
+                570,
+                83
+              ]
+            },
+            "tag": "A3",
+            "caption": "The signal crossing the gap",
+            "explainer": {
+              "name": "Radio signal",
+              "what": "A radio pulse moving at the speed of light from sender to receiver.",
+              "connects": [
+                {
+                  "tag": "A1",
+                  "text": "leaves at the send time"
+                },
+                {
+                  "tag": "A2",
+                  "text": "arrives one microsecond later"
+                }
+              ],
+              "sources": [
+                4,
+                2
+              ]
+            },
+            "motion": {
+              "order": 1,
+              "description": "The signal travels from the sender to the receiver."
+            }
+          },
+          {
+            "id": "scale",
+            "kind": "ruler",
+            "x": 40,
+            "y": 160,
+            "w": 920,
+            "h": 70,
+            "props": {
+              "marks": [
+                [
+                  "0 m",
+                  0
+                ],
+                [
+                  "100 m",
+                  0.3333
+                ],
+                [
+                  "200 m",
+                  0.6667
+                ],
+                [
+                  "300 m",
+                  1
+                ]
+              ],
+              "lit": 1,
+              "badgeAt": [
+                962,
+                183
+              ]
+            },
+            "tag": "A4",
+            "caption": "Speed times time: 300 metres",
+            "explainer": {
+              "name": "Distance",
+              "what": "Speed of light multiplied by the travel time. One microsecond of travel is 300 metres.",
+              "connects": [
+                {
+                  "tag": "A2",
+                  "text": "the travel time comes from here"
+                },
+                {
+                  "tag": "A5",
+                  "text": "a clock error stretches it"
+                }
+              ],
+              "sources": [
+                2,
+                3
+              ]
+            },
+            "motion": {
+              "order": 2,
+              "description": "The measured span grows along the scale to 300 metres."
+            }
+          },
+          {
+            "id": "error",
+            "kind": "list",
+            "x": 40,
+            "y": 300,
+            "w": 300,
+            "h": 130,
+            "props": {
+              "items": [
+                "clocks agree: 300 m",
+                "clock late: 600 m"
+              ],
+              "lit": 1
+            },
+            "tag": "A5",
+            "corner": "tr",
+            "caption": "A clock error becomes a distance error",
+            "explainer": {
+              "name": "Clock error",
+              "what": "If the receiver's clock runs one microsecond late, the travel time looks twice as long and the distance doubles. Every microsecond of error adds 300 metres.",
+              "connects": [
+                {
+                  "tag": "A1",
+                  "text": "both clocks must agree"
+                },
+                {
+                  "tag": "A4",
+                  "text": "the error lands on the distance"
+                }
+              ],
+              "sources": [
+                3
+              ]
+            },
+            "motion": {
+              "order": 3,
+              "description": "The wrong reading slides in when the clocks disagree."
+            }
+          }
+        ],
+        "connections": [
+          {
+            "from": "sender",
+            "to": "receiver",
+            "points": [
+              [
+                240,
+                71
+              ],
+              [
+                760,
+                71
+              ]
+            ],
+            "flow": true,
+            "note": "moves at light speed",
+            "noteAt": [
+              256,
+              62
+            ]
+          },
+          {
+            "from": "receiver",
+            "to": "scale",
+            "points": [
+              [
+                945,
+                102
+              ],
+              [
+                945,
+                176
+              ]
+            ]
+          },
+          {
+            "from": "scale",
+            "to": "error",
+            "points": [
+              [
+                64,
+                230
+              ],
+              [
+                64,
+                300
+              ]
+            ],
+            "note": "if a clock is wrong",
+            "noteAt": [
+              76,
+              262
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "National Weather Service: Understanding lightning, thunder",
+          "kind": "page",
+          "url": "https://www.weather.gov/safety/lightning-science-thunder"
+        },
+        {
+          "title": "NIST: Speed of light in vacuum (CODATA value)",
+          "kind": "page",
+          "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+        },
+        {
+          "title": "Penn State GEOG 160: 5.2 Global Positioning Systems",
+          "kind": "page",
+          "url": "https://courses.ems.psu.edu/geog160/node/1923"
+        },
+        {
+          "title": "NASA Science: Radio waves",
+          "kind": "page",
+          "url": "https://science.nasa.gov/ems/05_radiowaves/"
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "question": "Do you fully understand how a few distances pin down one exact point?",
+      "title": "Finding a point from distances",
+      "paragraph": "If you know how far you are from one landmark, you could be anywhere on a circle around it at that distance. A second known distance draws a second circle, and the two circles cross at just two points. A third distance, from a third landmark, settles it: only one point lies on all three circles. This method is called {trilateration}.[1] It needs no angles and no compass, only the distances and the exact positions of the {reference points}. Out in three dimensions each distance draws a {sphere} instead of a circle. Three spheres meet at two points, and one of them is usually far off in space, so it can be ruled out; the {intersection} that remains gives height as well as place.[2]",
+      "terms": [
+        {
+          "term": "trilateration",
+          "definition": "Finding a position from distances to known points, by intersecting circles (or spheres) of those radii. It differs from triangulation, which uses angles.",
+          "part": "B3",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "reference points",
+          "definition": "Points whose exact positions are known in advance, like landmarks on a map. Each distance is measured from one of them.",
+          "part": "B1",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "sphere",
+          "definition": "The 3D version of a circle: every point at the same distance from a centre, in all directions. A distance measured in space puts you somewhere on a sphere.",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "term": "intersection",
+          "definition": "The place where two or more shapes cross. The intersection of all the circles is the only position that matches every distance at once.",
+          "part": "B4",
+          "sources": [
+            1
+          ]
+        }
+      ],
+      "figure": {
+        "width": 1000,
+        "height": 630,
+        "label": "Three circles around three reference points; each circle is the set of points at one measured distance; they cross at one point, which is your position.",
+        "parts": [
+          {
+            "id": "map",
+            "kind": "panel",
+            "x": 20,
+            "y": 40,
+            "w": 680,
+            "h": 580,
+            "props": {
+              "plate": "map · flat, 2D"
+            }
+          },
+          {
+            "id": "r1",
+            "kind": "ring",
+            "x": 62.4,
+            "y": 72.4,
+            "w": 295.3,
+            "h": 295.3,
+            "tag": "B1",
+            "corner": "tl",
+            "props": {
+              "center": true,
+              "label": "landmark 1",
+              "lit": true,
+              "badgeAt": [
+                106,
+                116
+              ]
+            },
+            "caption": "One distance: you are on this circle",
+            "explainer": {
+              "name": "First distance",
+              "what": "Every point on this circle is exactly that far from landmark 1. You are somewhere on it, but it could be anywhere.",
+              "connects": [
+                {
+                  "tag": "B2",
+                  "text": "a second circle narrows it down"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            },
+            "motion": {
+              "order": 1,
+              "description": "The first circle draws itself around landmark 1."
+            }
+          },
+          {
+            "id": "r2",
+            "kind": "ring",
+            "x": 318.8,
+            "y": 48.8,
+            "w": 322.5,
+            "h": 322.5,
+            "tag": "B2",
+            "corner": "tr",
+            "props": {
+              "center": true,
+              "label": "landmark 2",
+              "lit": true,
+              "badgeAt": [
+                594,
+                96
+              ]
+            },
+            "caption": "A second distance leaves two points",
+            "explainer": {
+              "name": "Second distance",
+              "what": "The circle around landmark 2 crosses the first at exactly two points. You are at one of them.",
+              "connects": [
+                {
+                  "tag": "B1",
+                  "text": "crosses this circle twice"
+                },
+                {
+                  "tag": "B3",
+                  "text": "a third circle picks one"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            },
+            "motion": {
+              "order": 2,
+              "description": "The second circle draws itself and its two crossings light up."
+            }
+          },
+          {
+            "id": "r3",
+            "kind": "ring",
+            "x": 154.4,
+            "y": 284.4,
+            "w": 291.2,
+            "h": 291.2,
+            "tag": "B3",
+            "corner": "tl",
+            "props": {
+              "center": true,
+              "label": "landmark 3",
+              "lit": true,
+              "captionBelow": true,
+              "badgeAt": [
+                197,
+                533
+              ]
+            },
+            "caption": "A third distance picks the one point",
+            "explainer": {
+              "name": "Third distance",
+              "what": "The circle around landmark 3 passes through only one of the two crossings, so that crossing is your position.",
+              "connects": [
+                {
+                  "tag": "B2",
+                  "text": "rules out one of its two points"
+                },
+                {
+                  "tag": "B4",
+                  "text": "the point left is you"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            },
+            "motion": {
+              "order": 3,
+              "description": "The third circle draws itself through just one crossing."
+            }
+          },
+          {
+            "id": "you",
+            "kind": "ring",
+            "x": 330,
+            "y": 280,
+            "w": 20,
+            "h": 20,
+            "props": {
+              "fill": true,
+              "center": true
+            },
+            "tag": "B4",
+            "caption": "The only point on all three",
+            "explainer": {
+              "name": "Your position",
+              "what": "The single point that lies on every circle: the one place that is the right distance from all three landmarks.",
+              "connects": [
+                {
+                  "tag": "B1",
+                  "text": "on the first circle"
+                },
+                {
+                  "tag": "B2",
+                  "text": "on the second"
+                },
+                {
+                  "tag": "B3",
+                  "text": "and on the third"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            }
+          },
+          {
+            "id": "count",
+            "kind": "list",
+            "x": 740,
+            "y": 60,
+            "w": 230,
+            "h": 150,
+            "props": {
+              "items": [
+                "1 distance: a circle",
+                "2 distances: 2 points",
+                "3 distances: 1 point"
+              ],
+              "plate": "how many you need"
+            }
+          }
+        ],
+        "connections": []
+      },
+      "sources": [
+        {
+          "title": "Trilateration (Wikipedia)",
+          "kind": "page",
+          "url": "https://en.wikipedia.org/wiki/Trilateration"
+        },
+        {
+          "title": "Penn State GEOG 160: 5.2 Global Positioning Systems",
+          "kind": "page",
+          "url": "https://courses.ems.psu.edu/geog160/node/1923"
+        }
+      ]
+    }
+  ]
+}

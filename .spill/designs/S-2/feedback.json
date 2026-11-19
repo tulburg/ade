@@ -1,0 +1,269 @@
+{
+  "next": 13,
+  "nextNote": 6,
+  "pins": [
+    {
+      "n": 1,
+      "artboard": "ab-8",
+      "x": 705,
+      "y": 191,
+      "text": "The question should preceed the title. And it should be question of the left, yes / no options on the right. more like a quiz",
+      "at": "2026-11-19T20:10:21.622Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Done on every level artboard: a quiz row first (question left, Yes / No right), then the title.",
+          "at": "2026-11-19T20:13:14.793Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:14.793Z"
+    },
+    {
+      "n": 2,
+      "artboard": "ab-8",
+      "x": 490,
+      "y": 93,
+      "text": "avoid adding these, not needed",
+      "at": "2026-11-19T20:10:34.588Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Removed the level eyebrow everywhere.",
+          "at": "2026-11-19T20:13:14.855Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:14.855Z"
+    },
+    {
+      "n": 3,
+      "artboard": "ab-8",
+      "x": 1233,
+      "y": 35,
+      "text": "Same here, not needed, there’s no next  / prev. its not a wizard, its a reader",
+      "at": "2026-11-19T20:10:52.588Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Removed Prev / Next and the step counter. It reads as one page per level.",
+          "at": "2026-11-19T20:13:14.914Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:14.914Z"
+    },
+    {
+      "n": 4,
+      "artboard": "ab-8",
+      "x": 91,
+      "y": 30,
+      "text": "ADE name is not need. Its more like a PDF viewer. Its logo and name is irrelevant",
+      "at": "2026-11-19T20:11:24.422Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Removed the ADE name and the top bar entirely.",
+          "at": "2026-11-19T20:13:14.975Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:14.975Z"
+    },
+    {
+      "n": 5,
+      "artboard": "ab-8",
+      "x": 102,
+      "y": 99,
+      "text": "Exposure of the other steps are debatable but in the initial designs are not approved to be displayed",
+      "at": "2026-11-19T20:11:47.739Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Removed the level list (and the collapsed one on the main concept). Only the current level is shown.",
+          "at": "2026-11-19T20:13:15.035Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:15.035Z"
+    },
+    {
+      "n": 6,
+      "artboard": "ab-8",
+      "x": 130,
+      "y": 819,
+      "text": "This main concept is the only thing we really want to indicate so the user knows they opened the right document and not being misleaded.",
+      "at": "2026-11-19T20:12:16.139Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Kept only this: a small 'Main concept: How an AI coding agent works' line at the bottom of every page ('You are here' on the main concept).",
+          "at": "2026-11-19T20:13:15.094Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:13:15.094Z"
+    },
+    {
+      "n": 7,
+      "artboard": "ab-8",
+      "x": 530,
+      "y": 172,
+      "text": "We can try a different design where the question is actually centralized hoping the user clicks no to reveal the illustration and yes, to slide left for the next page. Think more fullscreen",
+      "at": "2026-11-19T20:13:17.422Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Drawn as artboards 6-8: 6 has the question alone, centred and full screen. 7 is the moment after Yes, with this page leaving left and the next sliding in from the right. 8 is after No: the question shrinks to one line and the figure fills the screen. Artboards 1-2 keep the quiz-row version from pin 1, so you can compare the two.",
+          "at": "2026-11-19T20:16:03.963Z"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "artboard": "ab-58",
+      "x": 814,
+      "y": 336,
+      "text": "Avoid complicated line works. Remove the dotted lines",
+      "at": "2026-11-19T20:19:02.742Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Removed the dotted rings around clickable parts (the tag alone marks them now), the dashed flow lines in the pipes, and the dot rows on the token tape. Applied on every artboard.",
+          "at": "2026-11-19T20:19:42.110Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:19:42.110Z"
+    },
+    {
+      "n": 9,
+      "artboard": "ab-58",
+      "x": 789,
+      "y": 334,
+      "text": "Just the dotted lines around components",
+      "at": "2026-11-19T20:19:23.156Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Got it. Only the dotted rings around components are gone; the tape dots and the flow line in the pipes are back.",
+          "at": "2026-11-19T20:19:52.129Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:19:52.129Z"
+    },
+    {
+      "n": 10,
+      "artboard": "ab-58",
+      "x": 269,
+      "y": 321,
+      "text": "Labels should be top-left or top-right corner of components only extends outside its bounds if the components is to tiny to fit it",
+      "at": "2026-11-19T20:20:27.603Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Tags now sit inside each component, at its top-left or top-right corner (whichever is clear of content). Only C4, the small tool-call slip, keeps its tag just above its corner because it is too small to hold one. Applied on every artboard.",
+          "at": "2026-11-19T20:21:19.544Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:21:19.544Z"
+    },
+    {
+      "n": 11,
+      "artboard": "ab-58",
+      "x": 109,
+      "y": 224,
+      "text": "Again, more fullscreen, remove the box, removive all text in this big box with it. Scaling the diagram takes priority for clarity.\n\nAlso, there was a design around the clickable components where the explanation pops right on the component with arrow. Thats the way. Clickable component can have a blue outline instead of gray",
+      "at": "2026-11-19T20:21:53.309Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Done on every artboard: the box and all its text (Fig label, title, hint, readout) are gone and the diagram scales to the full page width. Clickable parts have a blue outline and blue tags. The explainer pops up right on the component with an arrow again (artboards 3 and 5, C2 open).",
+          "at": "2026-11-19T20:22:52.945Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:22:52.945Z"
+    },
+    {
+      "n": 12,
+      "artboard": "ab-58",
+      "x": 172,
+      "y": 191,
+      "text": "We are missing the one paragraph explaination of the title",
+      "at": "2026-11-19T20:23:39.100Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Added the one-paragraph explanation under the title (artboards 2 and 8). The main concept (3 and 5) already had its paragraph.",
+          "at": "2026-11-19T20:24:19.044Z"
+        }
+      ],
+      "resolved": "2026-11-19T20:24:19.044Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "c-1",
+      "variant": "",
+      "text": "i like this",
+      "at": "2026-11-19T20:17:48.166Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Thanks. When you are ready, answer Q-1 to sign off, and say which level check to keep: the quiz row (artboards 1-2) or the centred full-screen question (6-8).",
+          "at": "2026-11-19T20:18:03.855Z"
+        }
+      ]
+    },
+    {
+      "id": "c-2",
+      "variant": "",
+      "text": "Remove the clickable blue outline for now, only show that on hover",
+      "at": "2026-11-19T20:25:31.695Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Done on every artboard: no blue outline at rest, only the blue tags. The outline shows on hover; artboards 3 and 5 show it on C2, whose explainer is open.",
+          "at": "2026-11-19T20:25:48.219Z"
+        }
+      ]
+    },
+    {
+      "id": "c-3",
+      "variant": "",
+      "text": "We are missing other texts on the page. before clicking components, there should be a brief text explaining it, same with the connections, there should be tiny explanation on them. Not long, 5 to 8 words max",
+      "at": "2026-11-19T20:28:32.873Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Added on every figure: each clickable part has a short caption beside its tag (for example A1 'The text so far, as tokens', C2 'All the model can see'), and each connection has a tiny italic label ('tokens go in', 'calls one tool', 'result goes back into the context'). All are 2 to 6 words.",
+          "at": "2026-11-19T20:30:02.444Z"
+        }
+      ]
+    },
+    {
+      "id": "c-4",
+      "variant": "",
+      "text": "The component’s texts should be on the canvas, not on the components themselves. Just middle right or middle left, whereever there’s space",
+      "at": "2026-11-19T20:29:42.893Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Moved every caption onto the canvas, beside its component at the middle left or middle right, wherever there is room. Inside the components only the tags remain. To make room I widened the canvas and moved the tools and repo column further right on the main concept. On artboards 3 and 5 the open C2 explainer covers the C3 caption, as it would in use.",
+          "at": "2026-11-19T20:31:35.234Z"
+        }
+      ]
+    },
+    {
+      "id": "c-5",
+      "variant": "",
+      "text": "Lets revert that, the previous text inside state was better that the new outside",
+      "at": "2026-11-19T20:31:47.199Z",
+      "replies": [
+        {
+          "by": "claude",
+          "text": "Reverted: captions are back inside the components next to their tags, as in the c-3 version, on every artboard.",
+          "at": "2026-11-19T20:33:12.150Z"
+        }
+      ]
+    }
+  ],
+  "reviews": {},
+  "chosen": {
+    "variant": "",
+    "at": "2026-11-19T20:44:51.099Z"
+  }
+}

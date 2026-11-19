@@ -1,0 +1,1051 @@
+{
+  "ade": 1,
+  "main": {
+    "title": "How an AI coding agent works",
+    "paragraph": "An AI coding agent is a {language model} run in a loop with tools. Your request goes into its {context window}, the working memory that holds everything the model can see: its instructions, your task, the files it has read and the result of every step so far.[1] On each step the model reads the whole context and answers with text or a {tool call}, a structured request such as edit_file(auth.ts).[2] The program around the model, the {harness}, runs that tool against your code and appends the result to the context. The loop repeats (read, act, observe) until the tests pass or the model decides the task is done. Nothing is remembered outside the context, so when it fills up, older steps are {summarized} to make room.[3]",
+    "terms": [
+      {
+        "term": "language model",
+        "definition": "A program that predicts the next token of text, again and again. Explained in L1.",
+        "part": "C3",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "term": "harness",
+        "definition": "The ordinary program that wraps the model: it sends the context to the model, runs the tools it asks for, and appends their results.",
+        "sources": [
+          3
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Anthropic docs: Context windows",
+        "kind": "doc",
+        "url": "https://docs.anthropic.com/en/docs/build-with-claude/context-windows"
+      },
+      {
+        "title": "Anthropic docs: Tool use with Claude",
+        "kind": "doc",
+        "url": "https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview"
+      },
+      {
+        "title": "Claude Code docs: Overview",
+        "kind": "doc",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+      }
+    ],
+    "figure": {
+      "width": 1000,
+      "height": 490,
+      "label": "An AI coding agent loop: a task enters the context window, the model reads it and calls a tool, the tool changes the repo, and the result is appended to the context for the next step.",
+      "parts": [
+        {
+          "id": "request",
+          "kind": "terminal",
+          "x": 30,
+          "y": 30,
+          "w": 210,
+          "h": 110,
+          "props": {
+            "lines": [
+              "> fix the failing",
+              "  test in auth.ts"
+            ]
+          },
+          "tag": "C1",
+          "corner": "tr",
+          "caption": "Your request, typed in once",
+          "explainer": {
+            "name": "Your request",
+            "what": "The task you type. It enters the context once, at the start.",
+            "connects": [
+              {
+                "tag": "C2",
+                "text": "goes into the context"
+              }
+            ],
+            "sources": [
+              3
+            ]
+          }
+        },
+        {
+          "id": "context",
+          "kind": "list",
+          "x": 30,
+          "y": 186,
+          "w": 210,
+          "h": 270,
+          "props": {
+            "items": [
+              "system prompt",
+              "task",
+              "file · auth.ts",
+              "result · 2 tests fail",
+              "edit applied"
+            ],
+            "lit": 4,
+            "empty": 2,
+            "badgeAt": [
+              226,
+              356
+            ],
+            "captionBelow": true
+          },
+          "tag": "C2",
+          "caption": "All the model can see",
+          "explainer": {
+            "name": "Context window",
+            "what": "Everything the model can see on this step: its instructions, your task, the files it has read, and the result of every tool call so far. It is re-read in full on every step. Anything not in it does not exist for the model.",
+            "connects": [
+              {
+                "tag": "C1",
+                "text": "your task enters it once"
+              },
+              {
+                "tag": "C3",
+                "text": "the model reads all of it each step"
+              },
+              {
+                "tag": "C6",
+                "text": "every tool result is appended to it"
+              },
+              {
+                "tag": "L2 B1",
+                "text": "it has a size limit; when full, old items are summarized"
+              }
+            ],
+            "sources": [
+              1,
+              3
+            ]
+          },
+          "motion": {
+            "order": 1,
+            "description": "The newest result slides into the next slot."
+          }
+        },
+        {
+          "id": "model",
+          "kind": "layers",
+          "x": 330,
+          "y": 196,
+          "w": 260,
+          "h": 220,
+          "props": {
+            "rows": 6,
+            "plate": "model · = L1 A2",
+            "seed": 3
+          },
+          "tag": "C3",
+          "caption": "Reads it all, picks the next move",
+          "explainer": {
+            "name": "The model",
+            "what": "The language model from L1. Each step it reads the whole context and writes either text or one tool call.",
+            "connects": [
+              {
+                "tag": "C2",
+                "text": "reads all of it"
+              },
+              {
+                "tag": "C4",
+                "text": "writes one tool call"
+              },
+              {
+                "tag": "L1 A2",
+                "text": "the same stack of layers"
+              }
+            ],
+            "sources": [
+              3
+            ]
+          }
+        },
+        {
+          "id": "call",
+          "kind": "chip",
+          "x": 486,
+          "y": 82,
+          "w": 132,
+          "h": 28,
+          "props": {
+            "text": "edit_file(auth.ts)",
+            "badgeAt": [
+              618,
+              110
+            ]
+          },
+          "tag": "C4",
+          "caption": "The tool call it writes",
+          "explainer": {
+            "name": "Tool call",
+            "what": "The model's request to use one tool, with its inputs.",
+            "connects": [
+              {
+                "tag": "C3",
+                "text": "written by the model"
+              },
+              {
+                "tag": "C5",
+                "text": "names one tool"
+              }
+            ],
+            "sources": [
+              2
+            ]
+          },
+          "motion": {
+            "order": 2,
+            "description": "The call travels from the model to the tool list."
+          }
+        },
+        {
+          "id": "tools",
+          "kind": "list",
+          "x": 650,
+          "y": 30,
+          "w": 320,
+          "h": 210,
+          "props": {
+            "items": [
+              "read file",
+              "edit file",
+              "run command",
+              "search"
+            ],
+            "selected": 1
+          },
+          "tag": "C5",
+          "corner": "tr",
+          "caption": "What the agent can do",
+          "explainer": {
+            "name": "Tools",
+            "what": "The functions the agent may use. The harness runs the one the model asked for.",
+            "connects": [
+              {
+                "tag": "C4",
+                "text": "the call picks one"
+              },
+              {
+                "tag": "C6",
+                "text": "a tool changes the code"
+              }
+            ],
+            "sources": [
+              2
+            ]
+          }
+        },
+        {
+          "id": "repo",
+          "kind": "files",
+          "x": 650,
+          "y": 290,
+          "w": 320,
+          "h": 166,
+          "props": {
+            "files": [
+              "auth.ts",
+              "auth.test.ts",
+              "index.ts",
+              "db.ts",
+              "README",
+              "package.json"
+            ],
+            "lit": 0,
+            "tests": "2 fail",
+            "badgeAt": [
+              943,
+              317
+            ],
+            "captionBelow": true
+          },
+          "tag": "C6",
+          "caption": "Your code and its tests",
+          "explainer": {
+            "name": "Your code",
+            "what": "The project on disk. Tools read and change it; the tests say whether the task is done.",
+            "connects": [
+              {
+                "tag": "C5",
+                "text": "tools act on it"
+              },
+              {
+                "tag": "C2",
+                "text": "results go back into the context"
+              }
+            ],
+            "sources": [
+              3
+            ]
+          },
+          "motion": {
+            "order": 3,
+            "description": "The test lamp turns from red to green when the tests pass."
+          }
+        }
+      ],
+      "connections": [
+        {
+          "from": "request",
+          "to": "context",
+          "points": [
+            [
+              135,
+              140
+            ],
+            [
+              135,
+              186
+            ]
+          ],
+          "note": "task enters the context",
+          "noteAt": [
+            145,
+            167
+          ]
+        },
+        {
+          "from": "context",
+          "to": "model",
+          "points": [
+            [
+              240,
+              320
+            ],
+            [
+              330,
+              320
+            ]
+          ],
+          "note": "read every step",
+          "noteAt": [
+            250,
+            311
+          ]
+        },
+        {
+          "from": "model",
+          "to": "tools",
+          "points": [
+            [
+              580,
+              196
+            ],
+            [
+              580,
+              96
+            ],
+            [
+              650,
+              96
+            ]
+          ],
+          "flow": true,
+          "note": "calls one tool",
+          "noteAt": [
+            508,
+            150
+          ]
+        },
+        {
+          "from": "tools",
+          "to": "repo",
+          "points": [
+            [
+              810,
+              240
+            ],
+            [
+              810,
+              290
+            ]
+          ],
+          "note": "tool changes the code",
+          "noteAt": [
+            820,
+            268
+          ]
+        },
+        {
+          "from": "repo",
+          "to": "context",
+          "points": [
+            [
+              650,
+              440
+            ],
+            [
+              240,
+              440
+            ]
+          ],
+          "note": "result goes back",
+          "noteAt": [
+            410,
+            432
+          ]
+        }
+      ]
+    }
+  },
+  "levels": [
+    {
+      "id": "L1",
+      "question": "Do you fully understand how a language model turns text into the next word?",
+      "title": "What a language model does",
+      "paragraph": "A language model writes by predicting. It splits the text so far into {tokens}, short pieces of words that each map to a number, and passes them through a stack of {transformer layers}. Every layer uses {attention} to weigh each token against every other, so a word is read in the context of the words around it.[1] The last layer turns this into a {probability distribution}: odds for every token in a vocabulary of about 100,000. The model {samples} one of them, and the {temperature} setting decides how adventurous that pick is; a low value almost always takes the likeliest token.[4] The chosen token is appended to the text, and the whole loop runs again on the longer text. Writing a paragraph is this loop repeated, one token at a time.[2]",
+      "terms": [
+        {
+          "term": "tokens",
+          "definition": "The pieces a model reads and writes. Common words are one token; rare words are split into several (\"unbelievable\" might be \"un\", \"believ\", \"able\"). Each token is a number in the model's vocabulary.",
+          "part": "A1",
+          "sources": [
+            3
+          ]
+        },
+        {
+          "term": "transformer layers",
+          "definition": "The repeated blocks that make up the model. Each one takes every token's current meaning and refines it using the others; a large model stacks dozens of them.",
+          "part": "A2",
+          "sources": [
+            1,
+            2
+          ]
+        },
+        {
+          "term": "attention",
+          "definition": "The step inside each layer that decides which other tokens matter for this one. In \"the cat sat on the\", the next word leans on \"sat on\" far more than on \"the\". Attention gives each pair of tokens a weight and mixes their meanings by those weights.",
+          "part": "A3",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "probability distribution",
+          "definition": "A list of odds, one for every possible next token, that add up to 1. \"mat\" at 0.62 means the model gives it a 62% chance.",
+          "part": "A4",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "term": "samples",
+          "definition": "Picks one token at random, weighted by the odds, instead of always taking the top one. This is why the same prompt can give different answers.",
+          "sources": [
+            4
+          ]
+        },
+        {
+          "term": "temperature",
+          "definition": "A number that sharpens or flattens the odds before the pick. Near 0 the top token nearly always wins; around 1 less likely tokens get real chances.",
+          "part": "A5",
+          "sources": [
+            4
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Vaswani et al., Attention Is All You Need (2017)",
+          "kind": "paper",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "Jay Alammar, The Illustrated Transformer",
+          "kind": "page",
+          "url": "https://jalammar.github.io/illustrated-transformer/"
+        },
+        {
+          "title": "Hugging Face docs: Summary of the tokenizers",
+          "kind": "doc",
+          "url": "https://huggingface.co/docs/transformers/tokenizer_summary"
+        },
+        {
+          "title": "Hugging Face blog: How to generate text",
+          "kind": "page",
+          "url": "https://huggingface.co/blog/how-to-generate"
+        }
+      ],
+      "figure": {
+        "width": 1000,
+        "height": 490,
+        "label": "A language model: tokens on a tape go through a stack of layers, which gives odds for the next token; one is picked and appended.",
+        "parts": [
+          {
+            "id": "tape",
+            "kind": "tape",
+            "x": 40,
+            "y": 40,
+            "w": 560,
+            "h": 84,
+            "props": {
+              "tokens": [
+                "The",
+                " cat",
+                " sat",
+                " on",
+                " the",
+                ""
+              ],
+              "badgeAt": [
+                596,
+                126
+              ]
+            },
+            "tag": "A1",
+            "caption": "The text so far, as tokens",
+            "explainer": {
+              "name": "Tokens",
+              "what": "The text the model has so far, split into tokens. The empty slot at the end is where the next token will go.",
+              "connects": [
+                {
+                  "tag": "A2",
+                  "text": "every token goes into the layers"
+                },
+                {
+                  "tag": "A4",
+                  "text": "the picked token fills the empty slot"
+                }
+              ],
+              "sources": [
+                3
+              ]
+            },
+            "motion": {
+              "order": 1,
+              "description": "The empty slot pulses until the picked token lands in it."
+            }
+          },
+          {
+            "id": "layers",
+            "kind": "layers",
+            "x": 170,
+            "y": 170,
+            "w": 440,
+            "h": 250,
+            "props": {
+              "rows": 7,
+              "plate": "model · stack of layers"
+            },
+            "tag": "A2",
+            "caption": "Layers that weigh tokens together",
+            "explainer": {
+              "name": "Transformer layers",
+              "what": "A stack of identical blocks. Each refines every token's meaning using the other tokens, through attention.",
+              "connects": [
+                {
+                  "tag": "A1",
+                  "text": "reads every token on the tape"
+                },
+                {
+                  "tag": "A3",
+                  "text": "attention links inside each layer"
+                },
+                {
+                  "tag": "A4",
+                  "text": "the last layer produces the odds"
+                }
+              ],
+              "sources": [
+                1,
+                2
+              ]
+            }
+          },
+          {
+            "id": "attn",
+            "kind": "callout",
+            "x": 330,
+            "y": 222,
+            "w": 100,
+            "h": 16,
+            "tag": "A3",
+            "caption": "Links that say which tokens matter",
+            "explainer": {
+              "name": "Attention",
+              "what": "The lines between token positions: each carries a weight for how much one token should borrow from another.",
+              "connects": [
+                {
+                  "tag": "A2",
+                  "text": "happens inside every layer"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            }
+          },
+          {
+            "id": "odds",
+            "kind": "bars",
+            "x": 660,
+            "y": 150,
+            "w": 300,
+            "h": 220,
+            "props": {
+              "items": [
+                [
+                  "mat",
+                  0.62
+                ],
+                [
+                  "floor",
+                  0.18
+                ],
+                [
+                  "bed",
+                  0.09
+                ],
+                [
+                  "sofa",
+                  0.06
+                ],
+                [
+                  "roof",
+                  0.03
+                ]
+              ],
+              "plate": "next-token odds",
+              "badgeAt": [
+                767,
+                183
+              ]
+            },
+            "tag": "A4",
+            "corner": "tr",
+            "caption": "Odds for each next token",
+            "explainer": {
+              "name": "Next-token odds",
+              "what": "The model's output: a probability for every token in its vocabulary. Only the top five are shown.",
+              "connects": [
+                {
+                  "tag": "A2",
+                  "text": "computed by the last layer"
+                },
+                {
+                  "tag": "A5",
+                  "text": "temperature reshapes these odds"
+                },
+                {
+                  "tag": "A1",
+                  "text": "the picked token is appended"
+                }
+              ],
+              "sources": [
+                2,
+                4
+              ]
+            },
+            "motion": {
+              "order": 2,
+              "description": "The top bar fills to 0.62 as the odds are computed."
+            }
+          },
+          {
+            "id": "temp",
+            "kind": "dial",
+            "x": 660,
+            "y": 392,
+            "w": 170,
+            "h": 62,
+            "props": {
+              "label": "temperature",
+              "value": 0.7,
+              "captionBelow": true
+            },
+            "tag": "A5",
+            "corner": "tr",
+            "caption": "How adventurous the pick is",
+            "explainer": {
+              "name": "Temperature",
+              "what": "A setting that sharpens or flattens the odds before one token is picked at random.",
+              "connects": [
+                {
+                  "tag": "A4",
+                  "text": "reshapes the odds before the pick"
+                }
+              ],
+              "sources": [
+                4
+              ]
+            }
+          },
+          {
+            "id": "picked",
+            "kind": "chip",
+            "x": 630,
+            "y": 70,
+            "w": 62,
+            "h": 24,
+            "props": {
+              "text": "mat",
+              "badgeAt": [
+                630,
+                70
+              ]
+            },
+            "motion": {
+              "order": 3,
+              "description": "The picked token travels from the odds back to the empty slot on the tape."
+            }
+          }
+        ],
+        "connections": [
+          {
+            "from": "tape",
+            "to": "layers",
+            "points": [
+              [
+                440,
+                124
+              ],
+              [
+                440,
+                170
+              ]
+            ],
+            "note": "tokens go in",
+            "noteAt": [
+              452,
+              152
+            ]
+          },
+          {
+            "from": "layers",
+            "to": "odds",
+            "points": [
+              [
+                610,
+                300
+              ],
+              [
+                660,
+                300
+              ]
+            ],
+            "note": "to odds",
+            "noteAt": [
+              618,
+              290
+            ]
+          },
+          {
+            "from": "odds",
+            "to": "tape",
+            "points": [
+              [
+                700,
+                150
+              ],
+              [
+                700,
+                82
+              ],
+              [
+                600,
+                82
+              ]
+            ],
+            "flow": true,
+            "note": "picked token is appended",
+            "noteAt": [
+              712,
+              120
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "L2",
+      "question": "Do you fully understand what a tool call is and what a context window holds?",
+      "title": "Tools and the context window",
+      "paragraph": "A language model on its own can only write text. A {tool} lets it act: it is a function, such as reading a file or running a command, described to the model by its name, its inputs and what it does.[1] To use one, the model writes a {tool call}, a short structured request naming the tool and its inputs, and the program around it runs the tool and returns the result. Everything the model can see on a step, its instructions, the conversation, tool calls and their results, sits in its {context window}.[2] The window has a fixed size, counted in {tokens}; when it is full, older content must be dropped or {summarized} before more can come in.",
+      "terms": [
+        {
+          "term": "tool",
+          "definition": "A function the model is allowed to ask for, like read_file or run_command. The model never runs it itself; it only asks, and a program runs it.",
+          "part": "B2",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "tool call",
+          "definition": "The model's request to use a tool: the tool's name plus its inputs, written in a fixed structure (for example edit_file with path auth.ts) so a program can read it.",
+          "part": "B3",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "term": "context window",
+          "definition": "Everything the model reads before it writes its next token, as one long text. It holds instructions, messages, tool calls and tool results. What is not in it, the model cannot know.",
+          "part": "B1",
+          "sources": [
+            2
+          ]
+        },
+        {
+          "term": "summarized",
+          "definition": "Replaced by a shorter version written by the model, so the key facts stay while most of the space is freed.",
+          "sources": [
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Anthropic docs: Tool use with Claude",
+          "kind": "doc",
+          "url": "https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview"
+        },
+        {
+          "title": "Anthropic docs: Context windows",
+          "kind": "doc",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/context-windows"
+        }
+      ],
+      "figure": {
+        "width": 1000,
+        "height": 400,
+        "label": "A context window on the left; the model writes a tool call, a tool runs, and its result is appended to the context.",
+        "parts": [
+          {
+            "id": "window",
+            "kind": "list",
+            "x": 40,
+            "y": 40,
+            "w": 300,
+            "h": 330,
+            "props": {
+              "items": [
+                "instructions",
+                "your message",
+                "tool call",
+                "tool result"
+              ],
+              "plate": "context window"
+            },
+            "tag": "B1",
+            "caption": "Everything the model reads each step",
+            "explainer": {
+              "name": "Context window",
+              "what": "The model's whole view for one step, read from top to bottom. New items are appended at the end.",
+              "connects": [
+                {
+                  "tag": "B3",
+                  "text": "each tool call is written into it"
+                },
+                {
+                  "tag": "B4",
+                  "text": "each result is appended to it"
+                },
+                {
+                  "tag": "L1 A1",
+                  "text": "its size is counted in tokens"
+                }
+              ],
+              "sources": [
+                2
+              ]
+            },
+            "motion": {
+              "order": 2,
+              "description": "The tool result slides into the next empty slot."
+            }
+          },
+          {
+            "id": "tools",
+            "kind": "list",
+            "x": 640,
+            "y": 40,
+            "w": 320,
+            "h": 210,
+            "props": {
+              "items": [
+                "read file",
+                "edit file",
+                "run command",
+                "search"
+              ],
+              "selected": 1
+            },
+            "tag": "B2",
+            "corner": "tr",
+            "caption": "The functions the model may ask for",
+            "explainer": {
+              "name": "Tools",
+              "what": "The list of functions described to the model. It picks one by name when it needs to act.",
+              "connects": [
+                {
+                  "tag": "B3",
+                  "text": "a call names one of these"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            }
+          },
+          {
+            "id": "call",
+            "kind": "chip",
+            "x": 420,
+            "y": 82,
+            "w": 150,
+            "h": 28,
+            "props": {
+              "text": "edit_file(auth.ts)",
+              "badgeAt": [
+                570,
+                110
+              ]
+            },
+            "tag": "B3",
+            "caption": "One request to use a tool",
+            "explainer": {
+              "name": "Tool call",
+              "what": "A structured request the model writes: the tool's name and its inputs.",
+              "connects": [
+                {
+                  "tag": "B2",
+                  "text": "names one tool"
+                },
+                {
+                  "tag": "B1",
+                  "text": "is written into the context"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            },
+            "motion": {
+              "order": 1,
+              "description": "The call travels from the context to the tool list."
+            }
+          },
+          {
+            "id": "result",
+            "kind": "chip",
+            "x": 420,
+            "y": 300,
+            "w": 150,
+            "h": 28,
+            "props": {
+              "text": "ok: 1 file changed",
+              "badgeAt": [
+                570,
+                328
+              ]
+            },
+            "tag": "B4",
+            "caption": "What the tool sends back",
+            "explainer": {
+              "name": "Tool result",
+              "what": "The output of the tool, returned as text and appended to the context.",
+              "connects": [
+                {
+                  "tag": "B1",
+                  "text": "is appended to the context"
+                }
+              ],
+              "sources": [
+                1
+              ]
+            },
+            "motion": {
+              "order": 3,
+              "description": "The result travels back to the context."
+            }
+          }
+        ],
+        "connections": [
+          {
+            "from": "window",
+            "to": "call",
+            "points": [
+              [
+                340,
+                96
+              ],
+              [
+                420,
+                96
+              ]
+            ],
+            "flow": true,
+            "note": "writes a call",
+            "noteAt": [
+              350,
+              88
+            ]
+          },
+          {
+            "from": "call",
+            "to": "tools",
+            "points": [
+              [
+                570,
+                96
+              ],
+              [
+                640,
+                96
+              ]
+            ],
+            "flow": true
+          },
+          {
+            "from": "tools",
+            "to": "result",
+            "points": [
+              [
+                800,
+                250
+              ],
+              [
+                800,
+                314
+              ],
+              [
+                570,
+                314
+              ]
+            ],
+            "note": "tool runs",
+            "noteAt": [
+              810,
+              280
+            ]
+          },
+          {
+            "from": "result",
+            "to": "window",
+            "points": [
+              [
+                420,
+                314
+              ],
+              [
+                340,
+                314
+              ]
+            ],
+            "flow": true,
+            "note": "appended",
+            "noteAt": [
+              350,
+              306
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "S-2": [
+    {
+      "path": "design/poc_gen.py",
+      "change": "changed"
+    },
+    {
+      "path": "CLAUDE.md",
+      "change": "changed"
+    },
+    {
+      "path": "README.md",
+      "change": "changed"
+    },
+    {
+      "path": ".spill/config.json",
+      "change": "changed"
+    },
+    {
+      "path": ".mcp.json",
+      "change": "new"
+    },
+    {
+      "path": "design/lm-press.mjs",
+      "change": "removed"
+    },
+    {
+      "path": "design/agent-bench.mjs",
+      "change": "removed"
+    }
+  ],
+  "S-3": [
+    {
+      "path": "package.json",
+      "change": "new"
+    },
+    {
+      "path": "package-lock.json",
+      "change": "new"
+    },
+    {
+      "path": "tsconfig.json",
+      "change": "new"
+    },
+    {
+      "path": "schema/ade.schema.json",
+      "change": "new"
+    },
+    {
+      "path": "src/format/types.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/format/validate.ts",
+      "change": "new"
+    },
+    {
+      "path": "bin/ade-validate.ts",
+      "change": "new"
+    },
+    {
+      "path": "test/fixtures/ai-coding-agent.ade.json",
+      "change": "new"
+    },
+    {
+      "path": "test/format.test.ts",
+      "change": "new"
+    }
+  ],
+  "S-9": [
+    {
+      "path": "src/kit/render.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/kit/theme.ts",
+      "change": "new"
+    },
+    {
+      "path": "bin/kit-preview.ts",
+      "change": "new"
+    },
+    {
+      "path": "test/kit.test.ts",
+      "change": "new"
+    },
+    {
+      "path": "test/fixtures/ai-coding-agent.ade.json",
+      "change": "changed"
+    }
+  ],
+  "S-4": [
+    {
+      "path": "src/reader/shell.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/reader/styles.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/reader/main.ts",
+      "change": "new"
+    },
+    {
+      "path": "bin/build.ts",
+      "change": "new"
+    },
+    {
+      "path": "test/reader.test.ts",
+      "change": "new"
+    },
+    {
+      "path": "package.json",
+      "change": "changed"
+    },
+    {
+      "path": ".gitignore",
+      "change": "changed"
+    }
+  ],
+  "S-5": [
+    {
+      "path": "src/reader/popup.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/reader/paragraph.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/reader/main.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/reader.test.ts",
+      "change": "changed"
+    }
+  ],
+  "S-6": [
+    {
+      "path": "src/reader/parts.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/reader/main.ts",
+      "change": "changed"
+    }
+  ],
+  "S-7": [
+    {
+      "path": "src/reader/motion.ts",
+      "change": "new"
+    },
+    {
+      "path": "src/kit/theme.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/reader/main.ts",
+      "change": "changed"
+    }
+  ],
+  "S-8": [
+    {
+      "path": "src/kit/theme.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/reader/shell.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/reader/styles.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/reader/main.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/theme.test.ts",
+      "change": "new"
+    }
+  ],
+  "S-10": [
+    {
+      "path": "bin/build.ts",
+      "change": "changed"
+    },
+    {
+      "path": "package.json",
+      "change": "changed"
+    },
+    {
+      "path": "test/export.test.ts",
+      "change": "new"
+    }
+  ],
+  "S-11": [
+    {
+      "path": ".claude/skills/ade-author/SKILL.md",
+      "change": "new"
+    },
+    {
+      "path": ".claude/skills/ade-author/reference/kinds.md",
+      "change": "new"
+    },
+    {
+      "path": "bin/check-links.ts",
+      "change": "new"
+    },
+    {
+      "path": "package.json",
+      "change": "changed"
+    }
+  ],
+  "S-13": [
+    {
+      "path": "src/format/validate.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/reader/paragraph.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/fixtures/ai-coding-agent.ade.json",
+      "change": "changed"
+    },
+    {
+      "path": "test/format.test.ts",
+      "change": "changed"
+    },
+    {
+      "path": ".claude/skills/ade-author/SKILL.md",
+      "change": "changed"
+    }
+  ],
+  "S-12": [
+    {
+      "path": "docs/gps.ade.json",
+      "change": "new"
+    },
+    {
+      "path": "dist/gps.html",
+      "change": "new"
+    },
+    {
+      "path": "src/kit/render.ts",
+      "change": "changed"
+    },
+    {
+      "path": "design/gps-preview/",
+      "change": "new"
+    }
+  ],
+  "S-14": [
+    {
+      "path": "src/reader/shell.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/reader.test.ts",
+      "change": "changed"
+    }
+  ],
+  "S-15": [
+    {
+      "path": "src/reader/motion.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/kit/render.ts",
+      "change": "changed"
+    },
+    {
+      "path": "src/format/validate.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/format.test.ts",
+      "change": "changed"
+    },
+    {
+      "path": "test/kit.test.ts",
+      "change": "changed"
+    },
+    {
+      "path": "docs/gps.ade.json",
+      "change": "changed"
+    },
+    {
+      "path": "test/fixtures/ai-coding-agent.ade.json",
+      "change": "changed"
+    }
+  ]
+}

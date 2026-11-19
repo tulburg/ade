@@ -1,0 +1,77 @@
+{
+  "next": 43172,
+  "artboards": [
+    {
+      "id": "ab-8",
+      "title": "1 Level check (question)",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:06:08.559Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-58",
+      "title": "2 Level 1 revealed (answered No)",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:06:08.683Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-418",
+      "title": "3 Main concept, part C2 open",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:06:08.810Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-799",
+      "title": "4 Marks, motion and rules",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:06:08.935Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-965",
+      "title": "5 Main concept, dark theme",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:06:09.063Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-23805",
+      "title": "6 Level check, centred (pin 7)",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:15:37.081Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-23820",
+      "title": "7 Yes: next page slides in from the right (pin 7)",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:15:37.208Z",
+      "status": "waiting"
+    },
+    {
+      "id": "ab-23848",
+      "title": "8 No: figure opens full screen (pin 7)",
+      "variant": "",
+      "width": "1440px",
+      "height": "900px",
+      "created": "2026-11-19T20:15:37.332Z",
+      "status": "waiting"
+    }
+  ]
+}

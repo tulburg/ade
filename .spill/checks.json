@@ -1,0 +1,376 @@
+{
+  "S-2": {
+    "at": "2026-11-19T20:46:12.991Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Artboards cover cover, Yes slide, revealed level (closed and term open), main concept with part open, marks sheet, dark theme",
+        "pass": true,
+        "detail": "Artboards 6, 7, 2, 8, 3, 4, 5"
+      },
+      {
+        "name": "Every clickable part has a tag",
+        "pass": true,
+        "detail": "L1: A1-A5; main: C1-C6"
+      },
+      {
+        "name": "At most 3 moving parts per figure",
+        "pass": true,
+        "detail": "3 motion badges in each figure"
+      },
+      {
+        "name": "User approved the design on the board",
+        "pass": true,
+        "detail": "D-3 answers Q-1: Approve this design"
+      }
+    ]
+  },
+  "S-3": {
+    "at": "2026-11-19T20:58:51.947Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Worked example (AI coding agent, L1 + L2) is written in the format and passes the validator",
+        "pass": true,
+        "detail": "test/fixtures/ai-coding-agent.ade.json: valid"
+      },
+      {
+        "name": "3 prerequisites fail with a located message",
+        "pass": true,
+        "detail": "$.levels allows at most 2 item(s)"
+      },
+      {
+        "name": "A missing tag fails",
+        "pass": true,
+        "detail": "same-level and cross-level (L1 A9) both reported"
+      },
+      {
+        "name": "A 4th moving part fails",
+        "pass": true,
+        "detail": "$.main.figure.parts has 4 moving parts"
+      },
+      {
+        "name": "A 9-word caption fails",
+        "pass": true,
+        "detail": "caption has 9 words; it must have 5 to 8"
+      },
+      {
+        "name": "A term with no definition fails",
+        "pass": true,
+        "detail": "term \"embeddings\" has no definition in terms"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "11 of 11 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-9": {
+    "at": "2026-11-19T21:01:57.107Z",
+    "running": false,
+    "results": [
+      {
+        "name": "The two S-2 figures, rebuilt from document data with the kit, match the approved artboards",
+        "pass": true,
+        "detail": "design/kit-preview L1 and main compared by screenshot with artboards 2 and 3: same parts, tags, captions, connections and 3 motion badges each"
+      },
+      {
+        "name": "A part smaller than 60 x 40 gets its tag outside its corner",
+        "pass": true,
+        "detail": "test/kit.test.ts; C4 and A3 in the previews"
+      },
+      {
+        "name": "Both themes from the same data",
+        "pass": true,
+        "detail": "colours are --ade-* CSS variables; light and dark previews rendered"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "17 of 17 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-4": {
+    "at": "2026-11-19T21:03:59.653Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Yes on L1 shows L2's cover; No on L2 shows L2 revealed; Next shows the main concept with no Next button",
+        "pass": true,
+        "detail": "walked in the browser: L1-cover -> L2-cover -> L2-level -> main (Back only)"
+      },
+      {
+        "name": "The same flow works by keyboard only",
+        "pass": true,
+        "detail": "Y, N, Right arrow, Left arrow (Back)"
+      },
+      {
+        "name": "No figure part clipped at 1024 x 640 and 1920 x 1080",
+        "pass": true,
+        "detail": "every .ade-part inside the window, below the paragraph and above the bottom bar, on L1, L2 and main"
+      },
+      {
+        "name": "No prerequisites opens on the main concept",
+        "pass": true,
+        "detail": "test/reader.test.ts"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "19 of 19 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-5": {
+    "at": "2026-11-19T21:05:21.008Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Every term in the L1 paragraph opens its definition",
+        "pass": true,
+        "detail": "6 of 6 terms open one popup each, titled with the term"
+      },
+      {
+        "name": "The A3 chip in 'attention' highlights A3",
+        "pass": true,
+        "detail": "chip click closes the popup and outlines A3"
+      },
+      {
+        "name": "Terms on the last line and at the right edge open fully visible popups",
+        "pass": true,
+        "detail": "every term and reference on L1, L2 and main at 1024 x 640: all popups inside the window"
+      },
+      {
+        "name": "One popup at a time; Esc closes",
+        "pass": true,
+        "detail": "0 popups after Escape"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "20 of 20 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-6": {
+    "at": "2026-11-19T21:06:37.214Z",
+    "running": false,
+    "results": [
+      {
+        "name": "C2 opens the Context window explainer pointing at C2",
+        "pass": true,
+        "detail": "popup on the right of C2, arrow at its edge; matches artboard 3"
+      },
+      {
+        "name": "L2 B1 chip opens L2 at B1; Back returns to C2",
+        "pass": true,
+        "detail": "L2-level with B1 open, then Back: main with C2 open again"
+      },
+      {
+        "name": "All parts reachable and openable with the keyboard",
+        "pass": true,
+        "detail": "Tab C1..C6 in tag order; Enter opens each; Esc closes; names are 'tag: caption'"
+      },
+      {
+        "name": "Typecheck",
+        "pass": true,
+        "detail": "tsc clean"
+      }
+    ]
+  },
+  "S-7": {
+    "at": "2026-11-19T21:07:51.766Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Both example figures loop their 3 moving parts in marker order",
+        "pass": true,
+        "detail": "L1: A1 slot pulse, A4 bar fills, picked token travels to the tape; main: C2 slot slides in, C4 call travels to the tools, C6 lamp turns green"
+      },
+      {
+        "name": "With reduce motion on, nothing moves until play is pressed",
+        "pass": true,
+        "detail": "starts paused on the final frame (lamp green), control reads Play"
+      },
+      {
+        "name": "Pauses while a popup is open; pause / play control",
+        "pass": true,
+        "detail": "opening C3 pauses, Esc resumes; the control toggles"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "20 of 20 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-8": {
+    "at": "2026-11-19T21:08:40.545Z",
+    "running": false,
+    "results": [
+      {
+        "name": "Every page of the example looks right in both themes",
+        "pass": true,
+        "detail": "cover, L1 with a term open, main with C2 open, checked by screenshot in light and dark"
+      },
+      {
+        "name": "Contrast check passes in both themes",
+        "pass": true,
+        "detail": "test/theme.test.ts: text, strong, muted (captions, notes, hints), link (tags, refs, chips) and button text all at least 4.5:1"
+      },
+      {
+        "name": "Follows the system setting; toggle offered",
+        "pass": true,
+        "detail": "prefers-color-scheme by default; Dark/Light toggle in the bottom bar, kept for the session"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "22 of 22 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-10": {
+    "at": "2026-11-19T21:09:16.678Z",
+    "running": false,
+    "results": [
+      {
+        "name": "The example exports to one file that works with the network off (apart from source links)",
+        "pass": true,
+        "detail": "full walk-through in the browser pane: 0 network requests; test: no external src/href/import/fetch, only source URLs in the file"
+      },
+      {
+        "name": "The file is under 2 MB",
+        "pass": true,
+        "detail": "61 KB"
+      },
+      {
+        "name": "Invalid document fails with the validator's messages",
+        "pass": true,
+        "detail": "test/export.test.ts"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "24 of 24 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-11": {
+    "at": "2026-11-19T21:31:50.009Z",
+    "running": false,
+    "results": [
+      {
+        "name": "(D-11) The skill authors the GPS document (S-12); it passes the validator and the link check",
+        "pass": true,
+        "detail": "docs/gps.ade.json written with the ade-author skill (loaded in the main session at the user's request, after the side session stalled); validate: valid; check-links: 10 of 10"
+      }
+    ]
+  },
+  "S-13": {
+    "at": "2026-11-19T21:13:15.199Z",
+    "running": false,
+    "results": [
+      {
+        "name": "A document defining a term on L1 and L2 fails with both paths",
+        "pass": true,
+        "detail": "before the fix the fixture itself failed: 'tokens' on L2 already defined at $.levels[0].terms[0].term (and 3 more on main)"
+      },
+      {
+        "name": "A sentence copied from L1 into the main paragraph fails with both paths",
+        "pass": true,
+        "detail": "repeats a sentence from $.levels[0].paragraph"
+      },
+      {
+        "name": "The fixed fixture passes; main page popups for L2 terms show L2's definitions",
+        "pass": true,
+        "detail": "context window, tool call, summarized open 'From L2' with L2's chip (L2 B1, L2 B3) and sources"
+      },
+      {
+        "name": "npm test and typecheck",
+        "pass": true,
+        "detail": "28 of 28 tests pass; tsc clean"
+      }
+    ]
+  },
+  "S-12": {
+    "at": "2026-11-19T21:31:40.249Z",
+    "running": false,
+    "results": [
+      {
+        "name": "The three figures are approved on the board",
+        "pass": true,
+        "detail": "D-12 answers Q-9: Approve this design"
+      },
+      {
+        "name": "The document passes the validator (S-3)",
+        "pass": true,
+        "detail": "npm run validate -- docs/gps.ade.json: valid"
+      },
+      {
+        "name": "It opens in the reader and walks through all three levels",
+        "pass": true,
+        "detail": "dist/gps.html: L1 and L2 covers, No reveals, motion, explainers, cross-level term (From L2), main page"
+      },
+      {
+        "name": "Every source link resolves",
+        "pass": true,
+        "detail": "npm run check-links: 10 of 10"
+      }
+    ]
+  },
+  "S-14": {
+    "at": "2026-11-19T21:34:12.210Z",
+    "running": false,
+    "results": [
+      {
+        "name": "In dist/gps.html: No on L1, then Next, shows the L2 page with no L2 cover; Next again shows the main concept",
+        "pass": true,
+        "detail": "L1-cover > n: L1-level > Next: L2-level > Next: main"
+      },
+      {
+        "name": "Yes on L1 still shows the L2 cover",
+        "pass": true,
+        "detail": "back to L1-cover > y: L2-cover > n: L2-level > Next: main"
+      },
+      {
+        "name": "Back from the L2 page returns to the L1 page",
+        "pass": true,
+        "detail": "main > Back: L2-level > Back: L1-level > Back: L1-cover"
+      },
+      {
+        "name": "A reader test covers both paths",
+        "pass": true,
+        "detail": "test/reader.test.ts S-14 test; npm test 29 pass, tsc clean. Y on a revealed page does nothing (checked in the browser)."
+      }
+    ]
+  },
+  "S-15": {
+    "at": "2026-11-19T22:10:55.164Z",
+    "running": false,
+    "results": [
+      {
+        "name": "In dist/gps.html, C3's signal takes about 2.5 s or more to travel to the phone and can be read on the way",
+        "pass": true,
+        "detail": "C3 keyframes: travels 0 to 2250 ms, fades by 2500 ms, back at rest by 3500 ms in a 12.5 s loop; its tag and caption stay in place (only .ade-body moves)"
+      },
+      {
+        "name": "No tag, caption or note in either document touches a border or crosses a line",
+        "pass": true,
+        "detail": "Overlap script over both documents: clear, except labels meant to sit inside the L2 map panel, on the L2 circles and over the L1 layers (callout). Checked by eye on the six S-15 artboards."
+      },
+      {
+        "name": "The validator flags a list with more items than its part can hold; a test covers it",
+        "pass": true,
+        "detail": "test/format.test.ts S-15 test; GPS C5 was caught (163 needed, 140 given) and fixed. npm test 30 pass, tsc clean"
+      },
+      {
+        "name": "The redrawn figures are approved on the board",
+        "pass": true,
+        "detail": "D-13 answers Q-10: Approve this design"
+      }
+    ]
+  }
+}

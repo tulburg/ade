@@ -1,0 +1,404 @@
+{"at":"2026-11-19T20:01:50.832Z","actor":"claude","action":"draft_spec","card":"S-2","detail":"Illustration design POC"}
+{"at":"2026-11-19T20:01:59.708Z","actor":"claude","action":"status","card":"S-2","detail":"draft -> discussing: Drawing the POC artboards now."}
+{"at":"2026-11-19T20:01:59.763Z","actor":"claude","action":"focus","card":"S-2","detail":"discussing S-2: Drawing the ADE illustration POC"}
+{"at":"2026-11-19T20:02:05.520Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-1 \"Test\""}
+{"at":"2026-11-19T20:02:11.184Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-1: n-2"}
+{"at":"2026-11-19T20:05:58.274Z","actor":"user","action":"status","card":"S-2","detail":"discussing -> rejected: Anatomy skill, needs to look more like the anatomy skill output"}
+{"at":"2026-11-19T20:06:08.424Z","actor":"claude","action":"design","card":"S-2","detail":"deleted ab-1"}
+{"at":"2026-11-19T20:06:08.560Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-8 \"1 Level check (question)\""}
+{"at":"2026-11-19T20:06:08.622Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-8: n-9"}
+{"at":"2026-11-19T20:06:08.684Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-58 \"2 Level 1 revealed (answered No)\""}
+{"at":"2026-11-19T20:06:08.750Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-58: n-59"}
+{"at":"2026-11-19T20:06:08.810Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-418 \"3 Main concept, part C2 open\""}
+{"at":"2026-11-19T20:06:08.874Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-418: n-419"}
+{"at":"2026-11-19T20:06:08.936Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-799 \"4 Marks, motion and rules\""}
+{"at":"2026-11-19T20:06:09.001Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-799: n-800"}
+{"at":"2026-11-19T20:06:09.063Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-965 \"5 Main concept, dark theme\""}
+{"at":"2026-11-19T20:06:09.132Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-965: n-966"}
+{"at":"2026-11-19T20:07:02.985Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-9 with n-1346"}
+{"at":"2026-11-19T20:07:03.119Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-59 with n-1395"}
+{"at":"2026-11-19T20:07:03.254Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-419 with n-1754"}
+{"at":"2026-11-19T20:07:03.389Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-800 with n-2135"}
+{"at":"2026-11-19T20:07:03.526Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-966 with n-2301"}
+{"at":"2026-11-19T20:07:27.828Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-1346 with n-2682"}
+{"at":"2026-11-19T20:07:27.959Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-1395 with n-2731"}
+{"at":"2026-11-19T20:07:28.089Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-1754 with n-3090"}
+{"at":"2026-11-19T20:07:28.220Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-2135 with n-3471"}
+{"at":"2026-11-19T20:07:28.354Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-2301 with n-3637"}
+{"at":"2026-11-19T20:07:38.827Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-2682 with n-4018"}
+{"at":"2026-11-19T20:07:38.959Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-2731 with n-4067"}
+{"at":"2026-11-19T20:07:39.092Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-3090 with n-4426"}
+{"at":"2026-11-19T20:07:39.220Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-3471 with n-4791"}
+{"at":"2026-11-19T20:07:39.357Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-3637 with n-4957"}
+{"at":"2026-11-19T20:07:55.166Z","actor":"claude","action":"ask","card":"Q-1","detail":"Approve the ADE illustration POC design?"}
+{"at":"2026-11-19T20:07:55.225Z","actor":"claude","action":"files","card":"S-2","detail":"new design/poc_gen.py, changed CLAUDE.md, changed README.md, changed .spill/config.json, new .mcp.json"}
+{"at":"2026-11-19T20:07:55.283Z","actor":"claude","action":"comment","card":"S-2","detail":"Drew 5 artboards (generator: design/poc_gen.py). Flat 2D take on the anatomy look: monochrome 0.6-1px inks, engraved name plates, Fig/title/hint/readout card corners. Clickable = dotted ring + reference tag; moving = the only colour, max 3 per figure. Example topic: How an AI coding agent works, with L1 Language model and L2 Tools and the context window."}
+{"at":"2026-11-19T20:07:55.342Z","actor":"claude","action":"focus","card":"S-2","detail":"discussing S-2: Waiting on design sign-off for the illustration POC"}
+{"at":"2026-11-19T20:08:11.958Z","actor":"claude","action":"status","card":"S-2","detail":"rejected -> discussing: Redrafting from the rejection: the figures will be built the way the anatomy skill builds them (a real crafted object whose working is the concept, many small solid shaded parts, halos, four-tone shading), using its kit, instead of the flat block diagrams."}
+{"at":"2026-11-19T20:10:21.623Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 1 on ab-8 \"1 Level check (question)\" at (705, 191): The question should preceed the title. And it should be question of the left, yes / no options on the right. more like a quiz"}
+{"at":"2026-11-19T20:10:34.589Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 2 on ab-8 \"1 Level check (question)\" at (490, 93): avoid adding these, not needed"}
+{"at":"2026-11-19T20:10:52.588Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 3 on ab-8 \"1 Level check (question)\" at (1233, 35): Same here, not needed, there’s no next  / prev. its not a wizard, its a reader"}
+{"at":"2026-11-19T20:11:24.422Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 4 on ab-8 \"1 Level check (question)\" at (91, 30): ADE name is not need. Its more like a PDF viewer. Its logo and name is irrelevant"}
+{"at":"2026-11-19T20:11:47.739Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 5 on ab-8 \"1 Level check (question)\" at (102, 99): Exposure of the other steps are debatable but in the initial designs are not approved to be displayed"}
+{"at":"2026-11-19T20:12:16.139Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 6 on ab-8 \"1 Level check (question)\" at (130, 819): This main concept is the only thing we really want to indicate so the user knows they opened the right document and not being misleaded."}
+{"at":"2026-11-19T20:12:32.716Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-4018 with n-5322"}
+{"at":"2026-11-19T20:12:32.843Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-4067 with n-5333"}
+{"at":"2026-11-19T20:12:32.978Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-4426 with n-6013"}
+{"at":"2026-11-19T20:12:33.173Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-4791 with n-7079"}
+{"at":"2026-11-19T20:12:33.382Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-4957 with n-12894"}
+{"at":"2026-11-19T20:12:48.615Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-5322 with n-13960"}
+{"at":"2026-11-19T20:12:48.751Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-5333 with n-13975"}
+{"at":"2026-11-19T20:12:48.903Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-6013 with n-14659"}
+{"at":"2026-11-19T20:12:49.178Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-7079 with n-15729"}
+{"at":"2026-11-19T20:12:49.394Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-12894 with n-21544"}
+{"at":"2026-11-19T20:13:14.793Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 1: Done on every level artboard: a quiz row first (question left, Yes / No right), then the title."}
+{"at":"2026-11-19T20:13:14.855Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 2: Removed the level eyebrow everywhere."}
+{"at":"2026-11-19T20:13:14.914Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 3: Removed Prev / Next and the step counter. It reads as one page per level."}
+{"at":"2026-11-19T20:13:14.975Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 4: Removed the ADE name and the top bar entirely."}
+{"at":"2026-11-19T20:13:15.035Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 5: Removed the level list (and the collapsed one on the main concept). Only the current level is shown."}
+{"at":"2026-11-19T20:13:15.094Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 6: Kept only this: a small 'Main concept: How an AI coding agent works' line at the bottom of every page ('You are here' on the main concept)."}
+{"at":"2026-11-19T20:13:15.154Z","actor":"claude","action":"update","card":"S-2","detail":"body"}
+{"at":"2026-11-19T20:13:15.215Z","actor":"claude","action":"comment","card":"S-2","detail":"Redrawn after the rejection and pins 1-6. The figures are now built with the anatomy kit itself (design/lm-press.mjs: a type press for L1; design/agent-bench.mjs: an agent bench for the main concept, where the card rack is the context window, the reading gantry is the model, the drawer chest is the tools, and the file stack with a test lamp is the repo). The page chrome follows the pins. Note: the figures are isometric like anatomy's output, not a flat front view; say if you want them flat."}
+{"at":"2026-11-19T20:13:15.278Z","actor":"claude","action":"files","card":"S-2","detail":"new design/lm-press.mjs, new design/agent-bench.mjs, changed design/poc_gen.py"}
+{"at":"2026-11-19T20:13:15.338Z","actor":"claude","action":"focus","card":"S-2","detail":"discussing S-2, Q-1: Redrawn POC waiting for design sign-off (Q-1)"}
+{"at":"2026-11-19T20:13:17.422Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 7 on ab-8 \"1 Level check (question)\" at (530, 172): We can try a different design where the question is actually centralized hoping the user clicks no to reveal the illustration and yes, to slide left for the next page. Think more fullscreen"}
+{"at":"2026-11-19T20:13:21.979Z","actor":"claude","action":"update","card":"Q-1","detail":"body"}
+{"at":"2026-11-19T20:15:36.329Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-13960 with n-22614"}
+{"at":"2026-11-19T20:15:36.482Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-13975 with n-22629"}
+{"at":"2026-11-19T20:15:36.628Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-14659 with n-22955"}
+{"at":"2026-11-19T20:15:36.846Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-15729 with n-23297"}
+{"at":"2026-11-19T20:15:36.992Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-21544 with n-23463"}
+{"at":"2026-11-19T20:15:37.082Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-23805 \"6 Level check, centred (pin 7)\""}
+{"at":"2026-11-19T20:15:37.148Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-23805: n-23806"}
+{"at":"2026-11-19T20:15:37.208Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-23820 \"7 Yes: next page slides in from the right (pin 7)\""}
+{"at":"2026-11-19T20:15:37.273Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-23820: n-23821"}
+{"at":"2026-11-19T20:15:37.332Z","actor":"claude","action":"design","card":"S-2","detail":"created artboard ab-23848 \"8 No: figure opens full screen (pin 7)\""}
+{"at":"2026-11-19T20:15:37.398Z","actor":"claude","action":"design","card":"S-2","detail":"added to ab-23848: n-23849"}
+{"at":"2026-11-19T20:16:03.784Z","actor":"claude","action":"update","card":"S-2","detail":"body"}
+{"at":"2026-11-19T20:16:03.846Z","actor":"claude","action":"comment","card":"S-2","detail":"Correction: the isometric redraw was wrong; the brief says 2D. The artboards are back on the original flat 2D figures (design/poc_gen.py), with pins 1-6 applied on top. The isometric scripts are deleted. Artboards 6-8 are new and answer pin 7."}
+{"at":"2026-11-19T20:16:03.904Z","actor":"claude","action":"files","card":"S-2","detail":"removed design/lm-press.mjs, removed design/agent-bench.mjs"}
+{"at":"2026-11-19T20:16:03.963Z","actor":"claude","action":"design","card":"S-2","detail":"replied to pin 7: Drawn as artboards 6-8: 6 has the question alone, centred and full screen. 7 is the moment after Yes, with this page leaving left and the next sliding in from the right. 8 is after No: the question shrinks to one line and the figure fills the screen. Artboards 1-2 keep the quiz-row version from pin 1, so you can compare the two."}
+{"at":"2026-11-19T20:16:04.022Z","actor":"claude","action":"update","card":"Q-1","detail":"body"}
+{"at":"2026-11-19T20:16:04.079Z","actor":"claude","action":"focus","card":"S-2","detail":"discussing S-2, Q-1: 2D POC restored with pins applied; pin 7 drawn as artboards 6-8"}
+{"at":"2026-11-19T20:17:48.166Z","actor":"user","action":"design_comment","card":"S-2","detail":"comment c-1: i like this"}
+{"at":"2026-11-19T20:18:03.856Z","actor":"claude","action":"design","card":"S-2","detail":"replied to comment c-1: Thanks. When you are ready, answer Q-1 to sign off, and say which level check to keep: the quiz row (artboards 1-2) or the centred full-screen question (6-8)."}
+{"at":"2026-11-19T20:19:02.742Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 8 on ab-58 \"2 Level 1 revealed (answered No)\" at (814, 336): Avoid complicated line works. Remove the dotted lines"}
+{"at":"2026-11-19T20:19:23.157Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 9 on ab-58 \"2 Level 1 revealed (answered No)\" at (789, 334): Just the dotted lines around components"}
+{"at":"2026-11-19T20:19:29.726Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-22614 with n-24171"}
+{"at":"2026-11-19T20:19:29.857Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-22629 with n-24186"}
+{"at":"2026-11-19T20:19:29.991Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-22955 with n-24506"}
+{"at":"2026-11-19T20:19:30.123Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-23297 with n-24841"}
+{"at":"2026-11-19T20:19:30.254Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-23463 with n-25005"}
+{"at":"2026-11-19T20:19:30.384Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-23806 with n-25340"}
+{"at":"2026-11-19T20:19:30.514Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-23821 with n-25354"}
+{"at":"2026-11-19T20:19:30.649Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-23849 with n-25381"}
+{"at":"2026-11-19T20:19:41.918Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-24186 with n-25697"}
+{"at":"2026-11-19T20:19:42.050Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25381 with n-25965"}
+{"at":"2026-11-19T20:19:42.110Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 8: Removed the dotted rings around clickable parts (the tag alone marks them now), the dashed flow lines in the pipes, and the dot rows on the token tape. Applied on every artboard."}
+{"at":"2026-11-19T20:19:51.163Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-24171 with n-26229"}
+{"at":"2026-11-19T20:19:51.291Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25697 with n-26244"}
+{"at":"2026-11-19T20:19:51.424Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-24506 with n-26565"}
+{"at":"2026-11-19T20:19:51.552Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-24841 with n-26901"}
+{"at":"2026-11-19T20:19:51.684Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25005 with n-27065"}
+{"at":"2026-11-19T20:19:51.813Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25340 with n-27401"}
+{"at":"2026-11-19T20:19:51.940Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25354 with n-27415"}
+{"at":"2026-11-19T20:19:52.071Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-25965 with n-27442"}
+{"at":"2026-11-19T20:19:52.129Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 9: Got it. Only the dotted rings around components are gone; the tape dots and the flow line in the pipes are back."}
+{"at":"2026-11-19T20:20:27.604Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 10 on ab-58 \"2 Level 1 revealed (answered No)\" at (269, 321): Labels should be top-left or top-right corner of components only extends outside its bounds if the components is to tiny to fit it"}
+{"at":"2026-11-19T20:21:10.274Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-26229 with n-27759"}
+{"at":"2026-11-19T20:21:10.401Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-26244 with n-27774"}
+{"at":"2026-11-19T20:21:10.527Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-26565 with n-28095"}
+{"at":"2026-11-19T20:21:10.658Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-26901 with n-28431"}
+{"at":"2026-11-19T20:21:10.790Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27065 with n-28595"}
+{"at":"2026-11-19T20:21:10.916Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27401 with n-28931"}
+{"at":"2026-11-19T20:21:11.048Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27415 with n-28945"}
+{"at":"2026-11-19T20:21:11.180Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27442 with n-28972"}
+{"at":"2026-11-19T20:21:19.544Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 10: Tags now sit inside each component, at its top-left or top-right corner (whichever is clear of content). Only C4, the small tool-call slip, keeps its tag just above its corner because it is too small to hold one. Applied on every artboard."}
+{"at":"2026-11-19T20:21:53.309Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 11 on ab-58 \"2 Level 1 revealed (answered No)\" at (109, 224): Again, more fullscreen, remove the box, removive all text in this big box with it. Scaling the diagram takes priority for clarity.\n\nAlso, there was a design around the clickable components where the explanation pops right on the component with arrow. Thats the way. Clickable component can have a blue outline instead of gray"}
+{"at":"2026-11-19T20:22:37.037Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27759 with n-29289"}
+{"at":"2026-11-19T20:22:37.164Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-27774 with n-29304"}
+{"at":"2026-11-19T20:22:37.297Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28095 with n-29625"}
+{"at":"2026-11-19T20:22:37.428Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28431 with n-29963"}
+{"at":"2026-11-19T20:22:37.560Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28595 with n-30129"}
+{"at":"2026-11-19T20:22:37.686Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28931 with n-30467"}
+{"at":"2026-11-19T20:22:37.815Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28945 with n-30481"}
+{"at":"2026-11-19T20:22:37.948Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-28972 with n-30508"}
+{"at":"2026-11-19T20:22:52.753Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-29304 with n-30825"}
+{"at":"2026-11-19T20:22:52.887Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-30508 with n-31146"}
+{"at":"2026-11-19T20:22:52.945Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 11: Done on every artboard: the box and all its text (Fig label, title, hint, readout) are gone and the diagram scales to the full page width. Clickable parts have a blue outline and blue tags. The explainer pops up right on the component with an arrow again (artboards 3 and 5, C2 open)."}
+{"at":"2026-11-19T20:23:39.101Z","actor":"user","action":"design_pin","card":"S-2","detail":"pin 12 on ab-58 \"2 Level 1 revealed (answered No)\" at (172, 191): We are missing the one paragraph explaination of the title"}
+{"at":"2026-11-19T20:24:10.890Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-30825 with n-31463"}
+{"at":"2026-11-19T20:24:11.025Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-31146 with n-31785"}
+{"at":"2026-11-19T20:24:19.044Z","actor":"claude","action":"design","card":"S-2","detail":"replied to and resolved pin 12: Added the one-paragraph explanation under the title (artboards 2 and 8). The main concept (3 and 5) already had its paragraph."}
+{"at":"2026-11-19T20:25:31.695Z","actor":"user","action":"design_comment","card":"S-2","detail":"comment c-2: Remove the clickable blue outline for now, only show that on hover"}
+{"at":"2026-11-19T20:25:47.223Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-29289 with n-32105"}
+{"at":"2026-11-19T20:25:47.355Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-31463 with n-32120"}
+{"at":"2026-11-19T20:25:47.489Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-29625 with n-32438"}
+{"at":"2026-11-19T20:25:47.621Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-29963 with n-32771"}
+{"at":"2026-11-19T20:25:47.757Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-30129 with n-32936"}
+{"at":"2026-11-19T20:25:47.894Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-30467 with n-33269"}
+{"at":"2026-11-19T20:25:48.024Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-30481 with n-33283"}
+{"at":"2026-11-19T20:25:48.159Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-31785 with n-33310"}
+{"at":"2026-11-19T20:25:48.219Z","actor":"claude","action":"design","card":"S-2","detail":"replied to comment c-2: Done on every artboard: no blue outline at rest, only the blue tags. The outline shows on hover; artboards 3 and 5 show it on C2, whose explainer is open."}
+{"at":"2026-11-19T20:26:57.606Z","actor":"claude","action":"record","card":"D-1","detail":"Level check: the question alone, centred and full screen"}
+{"at":"2026-11-19T20:26:57.724Z","actor":"claude","action":"update","card":"S-2","detail":"body"}
+{"at":"2026-11-19T20:26:57.785Z","actor":"claude","action":"update","card":"Q-1","detail":"body"}
+{"at":"2026-11-19T20:26:57.846Z","actor":"claude","action":"focus","card":"Q-1","detail":"discussing Q-1: Centred level check chosen; POC waiting for design sign-off"}
+{"at":"2026-11-19T20:28:32.874Z","actor":"user","action":"design_comment","card":"S-2","detail":"comment c-3: We are missing other texts on the page. before clicking components, there should be a brief text explaining it, same with the connections, there should be tiny explanation on them. Not long, 5 to 8 words max"}
+{"at":"2026-11-19T20:29:42.893Z","actor":"user","action":"design_comment","card":"S-2","detail":"comment c-4: The component’s texts should be on the canvas, not on the components themselves. Just middle right or middle left, whereever there’s space"}
+{"at":"2026-11-19T20:29:47.138Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-32105 with n-33626"}
+{"at":"2026-11-19T20:29:47.267Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-32120 with n-33641"}
+{"at":"2026-11-19T20:29:47.402Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-32438 with n-33956"}
+{"at":"2026-11-19T20:29:47.534Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-32771 with n-34300"}
+{"at":"2026-11-19T20:29:47.670Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-32936 with n-34465"}
+{"at":"2026-11-19T20:29:47.801Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33269 with n-34809"}
+{"at":"2026-11-19T20:29:47.934Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33283 with n-34823"}
+{"at":"2026-11-19T20:29:48.072Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33310 with n-34850"}
+{"at":"2026-11-19T20:30:02.246Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33641 with n-35163"}
+{"at":"2026-11-19T20:30:02.384Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-34850 with n-35478"}
+{"at":"2026-11-19T20:30:02.444Z","actor":"claude","action":"design","card":"S-2","detail":"replied to comment c-3: Added on every figure: each clickable part has a short caption beside its tag (for example A1 'The text so far, as tokens', C2 'All the model can see'), and each connection has a tiny italic label ('tokens go in', 'calls one tool', 'result goes back into the context'). All are 2 to 6 words."}
+{"at":"2026-11-19T20:31:02.543Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33626 with n-35791"}
+{"at":"2026-11-19T20:31:02.670Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-35163 with n-35806"}
+{"at":"2026-11-19T20:31:02.804Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-33956 with n-36132"}
+{"at":"2026-11-19T20:31:02.934Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-34300 with n-36476"}
+{"at":"2026-11-19T20:31:03.068Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-34465 with n-36641"}
+{"at":"2026-11-19T20:31:03.194Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-34809 with n-36985"}
+{"at":"2026-11-19T20:31:03.323Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-34823 with n-36999"}
+{"at":"2026-11-19T20:31:03.456Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-35478 with n-37026"}
+{"at":"2026-11-19T20:31:24.822Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-35791 with n-37350"}
+{"at":"2026-11-19T20:31:24.953Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-35806 with n-37365"}
+{"at":"2026-11-19T20:31:25.085Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-36132 with n-37691"}
+{"at":"2026-11-19T20:31:25.215Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-36476 with n-38035"}
+{"at":"2026-11-19T20:31:25.349Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-36641 with n-38200"}
+{"at":"2026-11-19T20:31:25.475Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-36985 with n-38544"}
+{"at":"2026-11-19T20:31:25.603Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-36999 with n-38558"}
+{"at":"2026-11-19T20:31:25.737Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-37026 with n-38585"}
+{"at":"2026-11-19T20:31:35.235Z","actor":"claude","action":"design","card":"S-2","detail":"replied to comment c-4: Moved every caption onto the canvas, beside its component at the middle left or middle right, wherever there is room. Inside the components only the tags remain. To make room I widened the canvas and moved the tools and repo column further right on the main concept. On artboards 3 and 5 the open C2 explainer covers the C3 caption, as it would in use."}
+{"at":"2026-11-19T20:31:47.200Z","actor":"user","action":"design_comment","card":"S-2","detail":"comment c-5: Lets revert that, the previous text inside state was better that the new outside"}
+{"at":"2026-11-19T20:32:16.747Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-37350 with n-38909"}
+{"at":"2026-11-19T20:32:16.874Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-37365 with n-38924"}
+{"at":"2026-11-19T20:32:17.000Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-37691 with n-39239"}
+{"at":"2026-11-19T20:32:17.131Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38035 with n-39583"}
+{"at":"2026-11-19T20:32:17.264Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38200 with n-39748"}
+{"at":"2026-11-19T20:32:17.394Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38544 with n-40092"}
+{"at":"2026-11-19T20:32:17.526Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38558 with n-40106"}
+{"at":"2026-11-19T20:32:17.662Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38585 with n-40133"}
+{"at":"2026-11-19T20:33:12.151Z","actor":"claude","action":"design","card":"S-2","detail":"replied to comment c-5: Reverted: captions are back inside the components next to their tags, as in the c-3 version, on every artboard."}
+{"at":"2026-11-19T20:41:52.164Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-38924 with n-40446"}
+{"at":"2026-11-19T20:41:52.301Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-39239 with n-40766"}
+{"at":"2026-11-19T20:41:52.441Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-39748 with n-41119"}
+{"at":"2026-11-19T20:41:52.579Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-40133 with n-41472"}
+{"at":"2026-11-19T20:42:09.591Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-40446 with n-41803"}
+{"at":"2026-11-19T20:42:09.720Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-40766 with n-42126"}
+{"at":"2026-11-19T20:42:09.853Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-41119 with n-42482"}
+{"at":"2026-11-19T20:42:09.988Z","actor":"claude","action":"design","card":"S-2","detail":"replaced n-41472 with n-42838"}
+{"at":"2026-11-19T20:42:38.894Z","actor":"claude","action":"update","card":"S-2","detail":"body"}
+{"at":"2026-11-19T20:42:38.954Z","actor":"claude","action":"comment","card":"S-2","detail":"Applied the chat feedback on artboards 2, 3, 5 and 8: component captions use the soft text colour; the paragraph and figures are justified edge to edge; revealed pages drop the question and end with a Next button (bottom right); the explanation is now a full ~5 line paragraph with underlined terms and numbered references. Artboard 8 shows the 'attention' term opened under the word. The main concept page has no Next, as it is the last page. Artboard 1 (quiz row) is superseded by the centred cover and left as is."}
+{"at":"2026-11-19T20:42:39.013Z","actor":"claude","action":"record","card":"D-2","detail":"No second question after the reveal"}
+{"at":"2026-11-19T20:44:51.099Z","actor":"user","action":"record","card":"D-3","detail":"answers Q-1: A. Approve this design"}
+{"at":"2026-11-19T20:44:51.100Z","actor":"auto","action":"status","card":"S-2","detail":"discussing -> approved (auto: design approved)"}
+{"at":"2026-11-19T20:44:52.529Z","actor":"user","action":"status","card":"S-2","detail":"approved -> queued"}
+{"at":"2026-11-19T20:45:55.166Z","actor":"claude","action":"status","card":"S-2","detail":"queued -> active: S-2 is design only, so building it means checking the approved artboards against the acceptance checks and closing it."}
+{"at":"2026-11-19T20:46:12.992Z","actor":"claude","action":"checks","card":"S-2","detail":"4 of 4 passed"}
+{"at":"2026-11-19T20:46:13.051Z","actor":"claude","action":"status","card":"S-2","detail":"active -> done: Design approved (D-3) and all acceptance checks pass. Generator: design/poc_gen.py."}
+{"at":"2026-11-19T20:47:24.316Z","actor":"claude","action":"draft_spec","card":"S-3","detail":"ADE document format"}
+{"at":"2026-11-19T20:47:24.378Z","actor":"claude","action":"draft_spec","card":"S-4","detail":"Reader shell: covers, reveal and Next"}
+{"at":"2026-11-19T20:47:24.438Z","actor":"claude","action":"draft_spec","card":"S-5","detail":"Explanation paragraph: terms and references"}
+{"at":"2026-11-19T20:47:24.496Z","actor":"claude","action":"draft_spec","card":"S-6","detail":"Figure parts: hover, tags and explainer popups"}
+{"at":"2026-11-19T20:47:24.555Z","actor":"claude","action":"draft_spec","card":"S-7","detail":"Motion: up to 3 moving parts"}
+{"at":"2026-11-19T20:47:24.613Z","actor":"claude","action":"draft_spec","card":"S-8","detail":"Light and dark themes"}
+{"at":"2026-11-19T20:47:24.672Z","actor":"claude","action":"draft_spec","card":"S-9","detail":"Figure kit: flat 2D parts from the document"}
+{"at":"2026-11-19T20:47:24.730Z","actor":"claude","action":"draft_spec","card":"S-10","detail":"Share as one HTML file"}
+{"at":"2026-11-19T20:47:24.788Z","actor":"claude","action":"draft_spec","card":"S-11","detail":"Authoring: write a document from a concept"}
+{"at":"2026-11-19T20:47:24.846Z","actor":"claude","action":"draft_spec","card":"S-12","detail":"Reference document: How an AI coding agent works"}
+{"at":"2026-11-19T20:47:43.727Z","actor":"claude","action":"ask","card":"Q-2","detail":"What should the reader be built with?"}
+{"at":"2026-11-19T20:47:43.786Z","actor":"claude","action":"ask","card":"Q-3","detail":"Which syntax should an ADE document use?"}
+{"at":"2026-11-19T20:47:43.845Z","actor":"claude","action":"ask","card":"Q-4","detail":"How should a figure be described in the document?"}
+{"at":"2026-11-19T20:47:43.905Z","actor":"claude","action":"ask","card":"Q-5","detail":"How are documents authored?"}
+{"at":"2026-11-19T20:47:43.964Z","actor":"claude","action":"ask","card":"Q-6","detail":"Can the reader go back to an earlier level?"}
+{"at":"2026-11-19T20:47:44.023Z","actor":"claude","action":"ask","card":"Q-7","detail":"When should the moving parts play?"}
+{"at":"2026-11-19T20:47:44.084Z","actor":"claude","action":"focus","card":"Q-2","detail":"discussing Q-2, Q-3, Q-4, Q-5, Q-6, Q-7; next S-3, S-4, S-9, S-12: Drafted the product specs (S-3 to S-12); these questions block them"}
+{"at":"2026-11-19T20:53:18.020Z","actor":"user","action":"record","card":"D-4","detail":"answers Q-3: A. JSON with a JSON Schema (recommended: strict, easy to validate)"}
+{"at":"2026-11-19T20:53:28.279Z","actor":"claude","action":"update","card":"S-3","detail":"body"}
+{"at":"2026-11-19T20:53:28.337Z","actor":"claude","action":"comment","card":"S-3","detail":"Updated for D-4: one JSON file per document, a JSON Schema in the repo, and validator messages that give the JSON path."}
+{"at":"2026-11-19T20:53:38.227Z","actor":"user","action":"record","card":"D-5","detail":"answers Q-4: A. Parts with explicit positions on a grid; the kit draws them (recommended: matches S-2, predictable)"}
+{"at":"2026-11-19T20:53:38.230Z","actor":"auto","action":"status","card":"S-3","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:53:49.126Z","actor":"claude","action":"update","card":"S-9","detail":"body"}
+{"at":"2026-11-19T20:53:49.186Z","actor":"claude","action":"comment","card":"S-9","detail":"Updated for D-5: parts carry explicit grid positions; the kit draws, it does not lay out."}
+{"at":"2026-11-19T20:53:49.247Z","actor":"claude","action":"comment","card":"S-3","detail":"D-5 settles req 6's 'drawing data': each part stores its kit kind plus its position and size on the figure's 1000-unit grid. No text change needed."}
+{"at":"2026-11-19T20:54:05.950Z","actor":"user","action":"record","card":"D-6","detail":"answers Q-2: A. Plain TypeScript and SVG, no UI framework, bundled with esbuild (recommended: smallest single file)"}
+{"at":"2026-11-19T20:54:05.953Z","actor":"auto","action":"status","card":"S-5","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:05.957Z","actor":"auto","action":"status","card":"S-8","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:05.958Z","actor":"auto","action":"status","card":"S-9","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:05.959Z","actor":"auto","action":"status","card":"S-10","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:16.327Z","actor":"user","action":"record","card":"D-7","detail":"answers Q-5: A. A Claude Code skill in this repo that writes the document file (recommended: no API key or server)"}
+{"at":"2026-11-19T20:54:16.333Z","actor":"auto","action":"status","card":"S-11","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:26.257Z","actor":"claude","action":"comment","card":"S-11","detail":"D-7: authoring is a Claude Code skill in this repo (.claude/skills/ade-author) that writes the .ade.json file and runs the validator. No API key or server."}
+{"at":"2026-11-19T20:54:26.312Z","actor":"claude","action":"comment","card":"S-10","detail":"D-6: the reader is plain TypeScript and SVG bundled with esbuild; the export inlines that bundle into the one HTML file. Dev dependencies this adds: typescript, esbuild (approved by D-6)."}
+{"at":"2026-11-19T20:54:47.035Z","actor":"user","action":"record","card":"D-8","detail":"answers Q-6: C. A small Back button next to Next"}
+{"at":"2026-11-19T20:54:47.037Z","actor":"auto","action":"status","card":"S-4","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:47.039Z","actor":"auto","action":"status","card":"S-6","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:54:58.495Z","actor":"user","action":"record","card":"D-9","detail":"answers Q-7: A. Loop while the figure is on screen, pause while a popup is open (recommended)"}
+{"at":"2026-11-19T20:54:58.498Z","actor":"auto","action":"status","card":"S-7","detail":"draft -> approved (auto: all questions answered)"}
+{"at":"2026-11-19T20:55:00.417Z","actor":"user","action":"status","card":"S-3","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:03.605Z","actor":"user","action":"status","card":"S-4","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:05.516Z","actor":"user","action":"status","card":"S-5","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:07.120Z","actor":"user","action":"status","card":"S-6","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:08.047Z","actor":"user","action":"status","card":"S-7","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:09.640Z","actor":"user","action":"status","card":"S-8","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:10.645Z","actor":"user","action":"status","card":"S-9","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:17.001Z","actor":"claude","action":"comment","card":"S-4","detail":"D-8: revealed pages and the main concept get a small Back button next to Next (bottom right), going to the previous page. This changes req 5 (the main concept page shows Back only). The button will be drawn on the S-2 artboard style before building."}
+{"at":"2026-11-19T20:55:17.059Z","actor":"claude","action":"comment","card":"S-7","detail":"D-9 confirms req 1 and 3 as written: loop while the figure is on screen, pause while a popup is open."}
+{"at":"2026-11-19T20:55:27.471Z","actor":"claude","action":"status","card":"S-3","detail":"queued -> active"}
+{"at":"2026-11-19T20:55:40.569Z","actor":"user","action":"status","card":"S-10","detail":"approved -> queued"}
+{"at":"2026-11-19T20:55:41.922Z","actor":"user","action":"status","card":"S-11","detail":"approved -> queued"}
+{"at":"2026-11-19T20:56:31.355Z","actor":"user","action":"status","card":"S-12","detail":"draft -> rejected: No, try a different more interesting general topic with tha max available levels - 3, 3rd being the topic"}
+{"at":"2026-11-19T20:57:23.436Z","actor":"claude","action":"update","card":"S-12","detail":"title, body"}
+{"at":"2026-11-19T20:57:23.498Z","actor":"claude","action":"status","card":"S-12","detail":"rejected -> discussing: Redrafted from the rejection: a general topic (GPS) with all 3 levels."}
+{"at":"2026-11-19T20:58:51.887Z","actor":"claude","action":"files","card":"S-3","detail":"new package.json, new package-lock.json, new tsconfig.json, new schema/ade.schema.json, new src/format/types.ts, new src/format/validate.ts, new bin/ade-validate.ts, new test/fixtures/ai-coding-agent.ade.json, new test/format.test.ts"}
+{"at":"2026-11-19T20:58:51.947Z","actor":"claude","action":"checks","card":"S-3","detail":"7 of 7 passed"}
+{"at":"2026-11-19T20:58:52.008Z","actor":"claude","action":"comment","card":"S-3","detail":"Done. JSON Schema in schema/ade.schema.json, validator in src/format/validate.ts (schema subset checker + cross-reference rules, messages carry the JSON path), CLI `npm run validate -- <file>`. The AI coding agent content is the test fixture (S-12 now uses GPS for the shared document). The validator caught one S-2 caption under 5 words ('Your request, typed once'); the fixture uses 'Your request, typed in once'. Dev deps: typescript (D-6) and @types/node (needed for the typecheck)."}
+{"at":"2026-11-19T20:58:52.070Z","actor":"claude","action":"status","card":"S-3","detail":"active -> done"}
+{"at":"2026-11-19T21:00:45.718Z","actor":"claude","action":"status","card":"S-9","detail":"queued -> active: Building S-9 before S-4 to S-8: their acceptance checks need figures drawn from document data."}
+{"at":"2026-11-19T21:01:57.045Z","actor":"claude","action":"files","card":"S-9","detail":"new src/kit/render.ts, new src/kit/theme.ts, new bin/kit-preview.ts, new test/kit.test.ts, changed test/fixtures/ai-coding-agent.ade.json"}
+{"at":"2026-11-19T21:01:57.107Z","actor":"claude","action":"checks","card":"S-9","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:01:57.166Z","actor":"claude","action":"comment","card":"S-9","detail":"Done. Kit in src/kit/render.ts: 10 part kinds (panel, tape, layers, callout, bars, dial, chip, terminal, list/tool rack, files), tags in the tl/tr corner (outside when under 60 x 40), captions inside next to the tag, connections with chevrons, flow and notes, motion badges (props.badgeAt). Each tagged part is a <g data-part data-tag> with a hidden outline for the reader. Preview: `node --experimental-strip-types bin/kit-preview.ts` writes design/kit-preview/*.html. Kind-specific options live in part.props (documented per kind in render.ts)."}
+{"at":"2026-11-19T21:01:57.225Z","actor":"claude","action":"status","card":"S-9","detail":"active -> done"}
+{"at":"2026-11-19T21:02:12.674Z","actor":"claude","action":"status","card":"S-4","detail":"queued -> active"}
+{"at":"2026-11-19T21:03:59.593Z","actor":"claude","action":"files","card":"S-4","detail":"new src/reader/shell.ts, new src/reader/styles.ts, new src/reader/main.ts, new bin/build.ts, new test/reader.test.ts, changed package.json, changed .gitignore"}
+{"at":"2026-11-19T21:03:59.654Z","actor":"claude","action":"checks","card":"S-4","detail":"5 of 5 passed"}
+{"at":"2026-11-19T21:03:59.716Z","actor":"claude","action":"comment","card":"S-4","detail":"Done. Reader shell in src/reader/shell.ts; `npm run build -- <file.ade.json>` writes dist/<name>.html (reader + document in one file). Back button next to Next per D-8 (Left arrow too); covers keep the S-2 hint line under Yes/No. Dev dependency added: esbuild (D-6). Paragraph marks are shown as plain text until S-5."}
+{"at":"2026-11-19T21:03:59.778Z","actor":"claude","action":"status","card":"S-4","detail":"active -> done"}
+{"at":"2026-11-19T21:04:44.539Z","actor":"claude","action":"status","card":"S-5","detail":"queued -> active"}
+{"at":"2026-11-19T21:05:20.949Z","actor":"claude","action":"files","card":"S-5","detail":"new src/reader/popup.ts, new src/reader/paragraph.ts, changed src/reader/main.ts, changed test/reader.test.ts"}
+{"at":"2026-11-19T21:05:21.009Z","actor":"claude","action":"checks","card":"S-5","detail":"5 of 5 passed"}
+{"at":"2026-11-19T21:05:21.072Z","actor":"claude","action":"comment","card":"S-5","detail":"Done. src/reader/paragraph.ts renders {term} as underlined blue buttons and [n] as reference numbers kept with their word; src/reader/popup.ts anchors popups with an arrow and flips/shifts them inside the window (S-6 reuses it). The part chip highlights the part for now; S-6 makes it open the part's explainer."}
+{"at":"2026-11-19T21:05:21.140Z","actor":"claude","action":"status","card":"S-5","detail":"active -> done"}
+{"at":"2026-11-19T21:05:21.202Z","actor":"claude","action":"status","card":"S-6","detail":"queued -> active"}
+{"at":"2026-11-19T21:06:07.984Z","actor":"claude","action":"record","card":"D-10","detail":"Golden rule: no overlapping information between pages"}
+{"at":"2026-11-19T21:06:08.045Z","actor":"claude","action":"comment","card":"S-11","detail":"Golden rule (D-10): no overlapping information between pages. When building S-11, the skill must check every page against its neighbours and cut, merge or drop a page that repeats another; this becomes a requirement of the skill and of its final check."}
+{"at":"2026-11-19T21:06:08.107Z","actor":"claude","action":"draft_spec","card":"S-13","detail":"Validator: no overlapping information between pages"}
+{"at":"2026-11-19T21:06:37.154Z","actor":"claude","action":"files","card":"S-6","detail":"new src/reader/parts.ts, changed src/reader/main.ts"}
+{"at":"2026-11-19T21:06:37.214Z","actor":"claude","action":"checks","card":"S-6","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:06:37.273Z","actor":"claude","action":"comment","card":"S-6","detail":"Done. src/reader/parts.ts: click or Enter opens the explainer on the part (arrow on its edge, flips when there is no room), blue outline only on hover/focus/open, same-level and cross-level chips (Back reopens the part you came from), Tab in tag order. Paragraph chips (S-5) now open the explainer too."}
+{"at":"2026-11-19T21:06:37.335Z","actor":"claude","action":"status","card":"S-6","detail":"active -> done"}
+{"at":"2026-11-19T21:06:37.396Z","actor":"claude","action":"status","card":"S-7","detail":"queued -> active"}
+{"at":"2026-11-19T21:07:51.704Z","actor":"claude","action":"files","card":"S-7","detail":"new src/reader/motion.ts, changed src/kit/theme.ts, changed src/reader/main.ts"}
+{"at":"2026-11-19T21:07:51.766Z","actor":"claude","action":"checks","card":"S-7","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:07:51.827Z","actor":"claude","action":"comment","card":"S-7","detail":"Done. src/reader/motion.ts drives the moving parts with the Web Animations API on one shared loop (1.4 s per part, marker order), plus moving dashes on flow paths. Motion per kind: tape slot pulses, bars fill, chips travel along their connection, list slot slides in, test lamp turns red to green (new theme colour ok)."}
+{"at":"2026-11-19T21:07:51.889Z","actor":"claude","action":"status","card":"S-7","detail":"active -> done"}
+{"at":"2026-11-19T21:07:51.950Z","actor":"claude","action":"status","card":"S-8","detail":"queued -> active"}
+{"at":"2026-11-19T21:08:40.484Z","actor":"claude","action":"files","card":"S-8","detail":"changed src/kit/theme.ts, changed src/reader/shell.ts, changed src/reader/styles.ts, changed src/reader/main.ts, new test/theme.test.ts"}
+{"at":"2026-11-19T21:08:40.545Z","actor":"claude","action":"checks","card":"S-8","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:08:40.605Z","actor":"claude","action":"comment","card":"S-8","detail":"Done. Two light colours moved slightly to pass AA: muted #8c8c90 -> #6b6b70 (notes, hints) and link #3e63dd -> #3a5ccf (tags on their soft blue). Toggle sits after the main concept indicator."}
+{"at":"2026-11-19T21:08:40.669Z","actor":"claude","action":"status","card":"S-8","detail":"active -> done"}
+{"at":"2026-11-19T21:08:40.735Z","actor":"claude","action":"status","card":"S-10","detail":"queued -> active"}
+{"at":"2026-11-19T21:09:16.619Z","actor":"claude","action":"files","card":"S-10","detail":"changed bin/build.ts, changed package.json, new test/export.test.ts"}
+{"at":"2026-11-19T21:09:16.678Z","actor":"claude","action":"checks","card":"S-10","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:09:16.739Z","actor":"claude","action":"comment","card":"S-10","detail":"Done. `npm run export -- <file.ade.json> [out.html]` (same as build) writes one self-contained HTML file. Verified in the Chromium-based browser pane only; Safari and Firefox (req 3) were not run in this session, so please open dist/ai-coding-agent.html in them once."}
+{"at":"2026-11-19T21:09:16.801Z","actor":"claude","action":"status","card":"S-10","detail":"active -> done"}
+{"at":"2026-11-19T21:10:03.102Z","actor":"claude","action":"status","card":"S-11","detail":"queued -> active"}
+{"at":"2026-11-19T21:10:22.620Z","actor":"claude","action":"files","card":"S-11","detail":"new .claude/skills/ade-author/SKILL.md, new .claude/skills/ade-author/reference/kinds.md, new bin/check-links.ts, changed package.json"}
+{"at":"2026-11-19T21:10:22.682Z","actor":"claude","action":"checks","card":"S-11","detail":"2 of 3 passed; Authoring 'How an AI coding agent works' produces a valid document matching S-2 failed"}
+{"at":"2026-11-19T21:10:22.744Z","actor":"claude","action":"ask","card":"Q-8","detail":"Run S-11's end-to-end check on the GPS document instead?"}
+{"at":"2026-11-19T21:10:22.805Z","actor":"claude","action":"comment","card":"S-11","detail":"Built: skill .claude/skills/ade-author/SKILL.md (11 steps: plan levels, golden-rule pass, paragraphs, terms, figures from the kit, Spill design approval, sources, validate, check links, golden-rule pass on the result, export), reference/kinds.md (every kind and its props), bin/check-links.ts. Waiting on Q-8 for the end-to-end check."}
+{"at":"2026-11-19T21:10:22.866Z","actor":"claude","action":"focus","card":"Q-8","detail":"discussing Q-8, S-12, S-13; next S-11: S-3 to S-10 built and done; S-11 built, its end-to-end check needs Q-8; S-12 (GPS) and S-13 (overlap check) wait for approval"}
+{"at":"2026-11-19T21:11:19.870Z","actor":"user","action":"record","card":"D-11","detail":"answers Q-8: A. Replace the check: S-11 is done when the skill authors the GPS document (S-12) in a new session and it passes the validator and link check (recommended)"}
+{"at":"2026-11-19T21:11:22.349Z","actor":"user","action":"status","card":"S-12","detail":"discussing -> approved"}
+{"at":"2026-11-19T21:11:23.919Z","actor":"user","action":"status","card":"S-12","detail":"approved -> queued"}
+{"at":"2026-11-19T21:11:32.591Z","actor":"user","action":"status","card":"S-13","detail":"draft -> approved"}
+{"at":"2026-11-19T21:11:33.892Z","actor":"user","action":"status","card":"S-13","detail":"approved -> queued"}
+{"at":"2026-11-19T21:11:41.933Z","actor":"claude","action":"update","card":"S-11","detail":"body"}
+{"at":"2026-11-19T21:11:42.005Z","actor":"claude","action":"checks","card":"S-11","detail":"0 of 1 passed; (D-11) The skill authors the GPS document (S-12) in a new session; it passes the validator and the link check failed"}
+{"at":"2026-11-19T21:11:42.076Z","actor":"claude","action":"status","card":"S-11","detail":"active -> discussing: Built. Per D-11 it closes when the skill authors S-12 (GPS) in a new session; not building it in this one, so it leaves active."}
+{"at":"2026-11-19T21:11:42.141Z","actor":"claude","action":"comment","card":"S-12","detail":"Queued. Per D-11 this is authored with the ade-author skill in a new Claude Code session (the skill does not load in the session that created it). That run also closes S-11. Its three figures go on this spec for approval before they are written into the document (req 3)."}
+{"at":"2026-11-19T21:12:13.003Z","actor":"claude","action":"status","card":"S-13","detail":"queued -> active"}
+{"at":"2026-11-19T21:13:15.141Z","actor":"claude","action":"files","card":"S-13","detail":"changed src/format/validate.ts, changed src/reader/paragraph.ts, changed test/fixtures/ai-coding-agent.ade.json, changed test/format.test.ts, changed .claude/skills/ade-author/SKILL.md"}
+{"at":"2026-11-19T21:13:15.199Z","actor":"claude","action":"checks","card":"S-13","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:13:15.258Z","actor":"claude","action":"comment","card":"S-13","detail":"Done. Validator: one definition per term across the document (later pages use earlier ones; never the reverse), shared sentences of 6+ words across pages, and identical figures (same part kinds and captions) all fail with both paths. Reader: a term without a definition on its page opens the earlier page's, labelled 'From L2 · <title>'. Fixture: L2 lost its copy of 'tokens'; main lost its copies of tools, context window, tool call and summarized. The ade-author skill lists these as hard limits."}
+{"at":"2026-11-19T21:13:15.316Z","actor":"claude","action":"status","card":"S-13","detail":"active -> done"}
+{"at":"2026-11-19T21:13:15.377Z","actor":"claude","action":"focus","card":"S-12","detail":"discussing S-12, S-11: S-12 (GPS) waits for a new session with the ade-author skill; that run also closes S-11 (D-11)"}
+{"at":"2026-11-19T21:15:32.135Z","actor":"claude","action":"status","card":"S-12","detail":"queued -> active: Started in a new session with the ade-author skill (D-11). Levels as in req 1."}
+{"at":"2026-11-19T21:15:41.750Z","actor":"user","action":"comment","card":"S-11","detail":"Fix failing check: (D-11) The skill authors the GPS document (S-12) in a new session; it passes the validator and the link check"}
+{"at":"2026-11-19T21:15:42.542Z","actor":"user","action":"status","card":"S-11","detail":"discussing -> approved"}
+{"at":"2026-11-19T21:15:46.661Z","actor":"user","action":"status","card":"S-11","detail":"approved -> queued"}
+{"at":"2026-11-19T21:15:59.823Z","actor":"claude","action":"comment","card":"S-11","detail":"Fix requested. The failing check can only pass by authoring S-12 with the skill, and that is running now in the GPS session. That session sets S-11 active, records the D-11 check and marks it done once the GPS document passes the validator and link check. Until then S-11 stays queued."}
+{"at":"2026-11-19T21:18:28.523Z","actor":"claude","action":"comment","card":"S-12","detail":"Taken over by the main session at the user's request: the started session stalled with no output. Building here with the ade-author skill (it now loads in this session)."}
+{"at":"2026-11-19T21:22:54.598Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-1 \"L1 Distance from travel time\""}
+{"at":"2026-11-19T21:24:38.283Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-2 \"L2 Finding a point from distances (trilateration)\""}
+{"at":"2026-11-19T21:24:59.643Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-2: n-3"}
+{"at":"2026-11-19T21:25:09.527Z","actor":"claude","action":"design","card":"S-12","detail":"styled n-3, ab-2"}
+{"at":"2026-11-19T21:26:00.451Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-1: n-60"}
+{"at":"2026-11-19T21:26:00.463Z","actor":"claude","action":"design","card":"S-12","detail":"styled ab-1"}
+{"at":"2026-11-19T21:26:08.512Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-184 \"Main How GPS finds where you are\""}
+{"at":"2026-11-19T21:26:10.386Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-185 \"L1 Distance from travel time\""}
+{"at":"2026-11-19T21:26:10.453Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-185: n-186"}
+{"at":"2026-11-19T21:26:10.517Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-365 \"L2 Finding a point from distances\""}
+{"at":"2026-11-19T21:26:10.584Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-365: n-366"}
+{"at":"2026-11-19T21:26:10.646Z","actor":"claude","action":"design","card":"S-12","detail":"created artboard ab-463 \"Main: How your phone knows where you are\""}
+{"at":"2026-11-19T21:26:10.712Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-463: n-464"}
+{"at":"2026-11-19T21:26:27.340Z","actor":"claude","action":"design","card":"S-12","detail":"styled "}
+{"at":"2026-11-19T21:26:27.402Z","actor":"claude","action":"design","card":"S-12","detail":"styled "}
+{"at":"2026-11-19T21:26:27.463Z","actor":"claude","action":"design","card":"S-12","detail":"styled "}
+{"at":"2026-11-19T21:26:37.438Z","actor":"claude","action":"design","card":"S-12","detail":"styled ab-185, ab-365, ab-463"}
+{"at":"2026-11-19T21:27:00.635Z","actor":"claude","action":"design","card":"S-12","detail":"added to ab-184: n-676"}
+{"at":"2026-11-19T21:27:03.553Z","actor":"claude","action":"ask","card":"Q-9","detail":"Approve the three GPS figures?"}
+{"at":"2026-11-19T21:27:18.995Z","actor":"claude","action":"design","card":"S-12","detail":"deleted ab-1, ab-2, ab-184"}
+{"at":"2026-11-19T21:27:40.451Z","actor":"claude","action":"comment","card":"S-12","detail":"Side session (the one started for D-11) stopped on seeing the main session's takeover. It had drawn its own three figures here; they are deleted, so Q-9 covers only the main session's artboards. Kept from it: the kit's `ring` and `ruler` kinds in src/kit/render.ts, which docs/gps.ade.json uses (validates; npm test and tsc pass). Its earlier progress ticks on steps 1-7 may not match this build's step list."}
+{"at":"2026-11-19T21:27:55.903Z","actor":"claude","action":"comment","card":"S-12","detail":"Built docs/gps.ade.json (L1 Distance from travel time, L2 Finding a point from distances, main How your phone knows where you are). It validates, all 10 source links resolve, and dist/gps.html walks through all three levels in the reader (covers, reveal, motion, explainers, cross-level terms). Kit change: the satellite kind now draws at the bottom of its box so the tag sits clear above it. Waiting on Q-9 for figure approval before closing."}
+{"at":"2026-11-19T21:27:55.967Z","actor":"claude","action":"status","card":"S-12","detail":"active -> discussing: Paused on Q-9 (figure approval). Everything else in the acceptance checks passes."}
+{"at":"2026-11-19T21:27:56.029Z","actor":"claude","action":"focus","card":"Q-9","detail":"discussing Q-9, S-12; next S-11: GPS document built; waiting on figure approval (Q-9), then S-12 and S-11 close."}
+{"at":"2026-11-19T21:28:05.046Z","actor":"claude","action":"files","card":"S-12","detail":"new docs/gps.ade.json, new dist/gps.html, changed src/kit/render.ts, new design/gps-preview/"}
+{"at":"2026-11-19T21:30:46.574Z","actor":"claude","action":"draft_spec","card":"S-14","detail":"Reader: after a No, skip the later cover questions"}
+{"at":"2026-11-19T21:31:13.347Z","actor":"user","action":"record","card":"D-12","detail":"answers Q-9: A. Approve this design"}
+{"at":"2026-11-19T21:31:13.349Z","actor":"auto","action":"status","card":"S-12","detail":"discussing -> approved (auto: design approved)"}
+{"at":"2026-11-19T21:31:14.656Z","actor":"user","action":"status","card":"S-12","detail":"approved -> queued"}
+{"at":"2026-11-19T21:31:24.941Z","actor":"claude","action":"focus","card":"S-14","detail":"discussing S-14; next S-12, S-11: GPS figures approved (D-12). S-12 waits for Build to record its checks and close; S-14 is a draft."}
+{"at":"2026-11-19T21:31:31.613Z","actor":"claude","action":"status","card":"S-12","detail":"queued -> active: Build pressed after D-12 approved the figures: recording checks and closing."}
+{"at":"2026-11-19T21:31:40.250Z","actor":"claude","action":"checks","card":"S-12","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:31:40.369Z","actor":"claude","action":"status","card":"S-12","detail":"active -> done: All acceptance checks pass. docs/gps.ade.json, exported to dist/gps.html."}
+{"at":"2026-11-19T21:31:49.894Z","actor":"claude","action":"status","card":"S-11","detail":"queued -> active: Closing on the D-11 check now that S-12 is done."}
+{"at":"2026-11-19T21:31:50.010Z","actor":"claude","action":"checks","card":"S-11","detail":"1 of 1 passed"}
+{"at":"2026-11-19T21:31:50.127Z","actor":"claude","action":"status","card":"S-11","detail":"active -> done: D-11 check passes. Note: the document was authored in the main session, not a new one, because the user asked to build it here; the skill loaded fine."}
+{"at":"2026-11-19T21:31:50.184Z","actor":"claude","action":"focus","card":"S-14","detail":"discussing S-14: S-11 and S-12 done. S-14 (skip later covers after a No) is a draft waiting for review."}
+{"at":"2026-11-19T21:32:44.880Z","actor":"user","action":"status","card":"S-14","detail":"draft -> approved"}
+{"at":"2026-11-19T21:32:45.811Z","actor":"user","action":"status","card":"S-14","detail":"approved -> queued"}
+{"at":"2026-11-19T21:32:58.863Z","actor":"claude","action":"status","card":"S-14","detail":"queued -> active"}
+{"at":"2026-11-19T21:34:12.149Z","actor":"claude","action":"files","card":"S-14","detail":"changed src/reader/shell.ts, changed test/reader.test.ts"}
+{"at":"2026-11-19T21:34:12.210Z","actor":"claude","action":"checks","card":"S-14","detail":"4 of 4 passed"}
+{"at":"2026-11-19T21:34:12.335Z","actor":"claude","action":"status","card":"S-14","detail":"active -> done: All 4 checks pass."}
+{"at":"2026-11-19T21:34:14.870Z","actor":"claude","action":"focus","card":"-","detail":"cleared"}
+{"at":"2026-11-19T22:02:04.006Z","actor":"user","action":"message","card":"-","detail":"Looks brilliant. Just a minor updates:\n- The moving parts animations is always too fast - too fast for anyone to read or see i.e. C3 in gps example. \n- There’s need for clarifty using spacing. Some text overlap lines, labels too close to the edges. You can use Emil Kowalski to clean up with small proper spacing. We should create space for captions and labels in the diagrams [attached: /Users/tulburg/Developer/ADE/.spill/attachments/2026-11-19T22-02-04-005Z-image.png, /Users/tulburg/Developer/ADE/.spill/attachments/2026-11-19T22-02-04-005Z-2-image.png]"}
+{"at":"2026-11-19T22:02:45.322Z","actor":"claude","action":"draft_spec","card":"S-15","detail":"Figures: slower motion and room for every label"}
+{"at":"2026-11-19T22:02:45.402Z","actor":"claude","action":"reply","card":"-","detail":"Thanks. I drafted both points as one spec, S-15 \"Figures: slower motion and room for every label\": motion about 2.5 s per moving part with soft easing and holds between steps (C3 included), tags inset 12 units, captions on their own reserved line clear of title bars, notes kept off the lines, and list slots that fit their box (the validator will catch overflow like the C5 list in your screenshot). The redrawn figures go on S-15 for your approval. Press Build when it looks right.","thread":"2026-11-19T22:02:04.006Z"}
+{"at":"2026-11-19T22:03:11.177Z","actor":"user","action":"status","card":"S-15","detail":"draft -> approved"}
+{"at":"2026-11-19T22:03:12.421Z","actor":"user","action":"status","card":"S-15","detail":"approved -> queued"}
+{"at":"2026-11-19T22:03:29.151Z","actor":"claude","action":"status","card":"S-15","detail":"queued -> active"}
+{"at":"2026-11-19T22:07:19.168Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-1 \"GPS L1\""}
+{"at":"2026-11-19T22:07:19.248Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-1: n-2"}
+{"at":"2026-11-19T22:07:20.264Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-185 \"GPS L2\""}
+{"at":"2026-11-19T22:07:20.343Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-185: n-186"}
+{"at":"2026-11-19T22:07:21.295Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-286 \"GPS main\""}
+{"at":"2026-11-19T22:07:21.377Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-286: n-287"}
+{"at":"2026-11-19T22:07:22.286Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-504 \"AI agent L1\""}
+{"at":"2026-11-19T22:07:22.369Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-504: n-505"}
+{"at":"2026-11-19T22:07:23.312Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-830 \"AI agent L2\""}
+{"at":"2026-11-19T22:07:23.395Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-830: n-831"}
+{"at":"2026-11-19T22:07:24.328Z","actor":"claude","action":"design","card":"S-15","detail":"created artboard ab-962 \"AI agent main\""}
+{"at":"2026-11-19T22:07:24.414Z","actor":"claude","action":"design","card":"S-15","detail":"added to ab-962: n-963"}
+{"at":"2026-11-19T22:08:13.639Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-2 with n-1282"}
+{"at":"2026-11-19T22:08:14.674Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-186 with n-1465"}
+{"at":"2026-11-19T22:08:15.705Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-287 with n-1565"}
+{"at":"2026-11-19T22:08:16.740Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-505 with n-1785"}
+{"at":"2026-11-19T22:08:17.798Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-831 with n-2110"}
+{"at":"2026-11-19T22:08:18.847Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-963 with n-2241"}
+{"at":"2026-11-19T22:08:33.347Z","actor":"claude","action":"design","card":"S-15","detail":"replaced n-1785 with n-2563"}
+{"at":"2026-11-19T22:09:36.701Z","actor":"claude","action":"files","card":"S-15","detail":"changed src/reader/motion.ts, changed src/kit/render.ts, changed src/format/validate.ts, changed test/format.test.ts, changed test/kit.test.ts, changed docs/gps.ade.json, changed test/fixtures/ai-coding-agent.ade.json"}
+{"at":"2026-11-19T22:09:36.782Z","actor":"claude","action":"ask","card":"Q-10","detail":"Approve the redrawn figures (slower motion, more room)?"}
+{"at":"2026-11-19T22:09:36.862Z","actor":"claude","action":"status","card":"S-15","detail":"active -> discussing: Built; waiting on the design question for the redrawn figures."}
+{"at":"2026-11-19T22:10:26.157Z","actor":"user","action":"record","card":"D-13","detail":"answers Q-10: A. Approve this design"}
+{"at":"2026-11-19T22:10:26.160Z","actor":"auto","action":"status","card":"S-15","detail":"discussing -> approved (auto: design approved)"}
+{"at":"2026-11-19T22:10:27.307Z","actor":"user","action":"status","card":"S-15","detail":"approved -> queued"}
+{"at":"2026-11-19T22:10:44.790Z","actor":"claude","action":"status","card":"S-15","detail":"queued -> active: D-13 approved the figures; recording checks and closing."}
+{"at":"2026-11-19T22:10:55.165Z","actor":"claude","action":"checks","card":"S-15","detail":"4 of 4 passed"}
+{"at":"2026-11-19T22:10:55.318Z","actor":"claude","action":"status","card":"S-15","detail":"active -> done: All 4 checks pass."}

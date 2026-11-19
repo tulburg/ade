@@ -1,0 +1,835 @@
+{
+  "S-3": {
+    "at": "2026-11-19T20:58:51.825Z",
+    "items": [
+      {
+        "text": "package.json with typecheck and test scripts",
+        "done": true
+      },
+      {
+        "text": "Install typescript (D-6)",
+        "done": true
+      },
+      {
+        "text": "tsconfig for strip-types TypeScript",
+        "done": true
+      },
+      {
+        "text": "Schema: document root (version, main, levels)",
+        "done": true
+      },
+      {
+        "text": "Schema: level (id, question, title, paragraph, figure)",
+        "done": true
+      },
+      {
+        "text": "Schema: main concept",
+        "done": true
+      },
+      {
+        "text": "Schema: paragraph text with {term} and [n] marks",
+        "done": true
+      },
+      {
+        "text": "Schema: terms and definitions",
+        "done": true
+      },
+      {
+        "text": "Schema: sources",
+        "done": true
+      },
+      {
+        "text": "Schema: figure (grid width, height)",
+        "done": true
+      },
+      {
+        "text": "Schema: part (tag, kind, position, caption, explainer)",
+        "done": true
+      },
+      {
+        "text": "Schema: explainer (what, connects, sources)",
+        "done": true
+      },
+      {
+        "text": "Schema: connections and notes",
+        "done": true
+      },
+      {
+        "text": "Schema: motion on parts",
+        "done": true
+      },
+      {
+        "text": "Validator: JSON Schema subset checker",
+        "done": true
+      },
+      {
+        "text": "Validator: max 2 prerequisites",
+        "done": true
+      },
+      {
+        "text": "Validator: unique tags per level",
+        "done": true
+      },
+      {
+        "text": "Validator: cited tags exist (same and cross level)",
+        "done": true
+      },
+      {
+        "text": "Validator: caption 5-8 words, note max 5 words",
+        "done": true
+      },
+      {
+        "text": "Validator: max 3 moving parts",
+        "done": true
+      },
+      {
+        "text": "Validator: every paragraph term defined",
+        "done": true
+      },
+      {
+        "text": "Validator: every reference number has a source",
+        "done": true
+      },
+      {
+        "text": "Validator: terms need a source",
+        "done": true
+      },
+      {
+        "text": "Validator: messages with JSON path",
+        "done": true
+      },
+      {
+        "text": "CLI: ade-validate <file>",
+        "done": true
+      },
+      {
+        "text": "Example: main concept",
+        "done": true
+      },
+      {
+        "text": "Example: L1",
+        "done": true
+      },
+      {
+        "text": "Example: L2",
+        "done": true
+      },
+      {
+        "text": "Test: example passes",
+        "done": true
+      },
+      {
+        "text": "Test: 3 prerequisites fail",
+        "done": true
+      },
+      {
+        "text": "Test: missing tag fails",
+        "done": true
+      },
+      {
+        "text": "Test: 4th moving part fails",
+        "done": true
+      },
+      {
+        "text": "Test: 9-word caption fails",
+        "done": true
+      },
+      {
+        "text": "Test: undefined term fails",
+        "done": true
+      },
+      {
+        "text": "Typecheck passes",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T20:58:51.825Z"
+  },
+  "S-9": {
+    "at": "2026-11-19T21:01:56.983Z",
+    "items": [
+      {
+        "text": "Port primitives (body, plate, caption, note, badge, ticks)",
+        "done": true
+      },
+      {
+        "text": "Kind: panel",
+        "done": true
+      },
+      {
+        "text": "Kind: tape",
+        "done": true
+      },
+      {
+        "text": "Kind: layers",
+        "done": true
+      },
+      {
+        "text": "Kind: callout",
+        "done": true
+      },
+      {
+        "text": "Kind: bars",
+        "done": true
+      },
+      {
+        "text": "Kind: dial",
+        "done": true
+      },
+      {
+        "text": "Kind: chip",
+        "done": true
+      },
+      {
+        "text": "Kind: terminal",
+        "done": true
+      },
+      {
+        "text": "Kind: list and tool rack",
+        "done": true
+      },
+      {
+        "text": "Kind: files and test lamp",
+        "done": true
+      },
+      {
+        "text": "Tags in tl/tr corner, outside when under 60 x 40",
+        "done": true
+      },
+      {
+        "text": "Captions inside next to the tag",
+        "done": true
+      },
+      {
+        "text": "Connections with chevrons, flow and notes",
+        "done": true
+      },
+      {
+        "text": "Motion badges and classes",
+        "done": true
+      },
+      {
+        "text": "Hover outline per part",
+        "done": true
+      },
+      {
+        "text": "Content box for justified layout",
+        "done": true
+      },
+      {
+        "text": "Theme CSS variables (light, dark)",
+        "done": true
+      },
+      {
+        "text": "Fixture: kit props for the S-2 figures",
+        "done": true
+      },
+      {
+        "text": "Preview page: S-2 artboard vs kit, both themes",
+        "done": true
+      },
+      {
+        "text": "Screenshot compare L1",
+        "done": true
+      },
+      {
+        "text": "Screenshot compare main",
+        "done": true
+      },
+      {
+        "text": "Test: small part tag outside",
+        "done": true
+      },
+      {
+        "text": "Test: unknown kind fails",
+        "done": true
+      },
+      {
+        "text": "Typecheck",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:01:56.983Z"
+  },
+  "S-4": {
+    "at": "2026-11-19T21:03:59.531Z",
+    "items": [
+      {
+        "text": "Install esbuild (D-6)",
+        "done": true
+      },
+      {
+        "text": "Build script: bundle reader into one HTML with the document",
+        "done": true
+      },
+      {
+        "text": "Page sequence from the document (covers, levels, main)",
+        "done": true
+      },
+      {
+        "text": "Cover page: centred question, Yes and No",
+        "done": true
+      },
+      {
+        "text": "Yes: next page slides in from the right",
+        "done": true
+      },
+      {
+        "text": "No: reveal title, paragraph, figure",
+        "done": true
+      },
+      {
+        "text": "Next button bottom right",
+        "done": true
+      },
+      {
+        "text": "Back button next to Next (D-8)",
+        "done": true
+      },
+      {
+        "text": "Main page: Back only, no Next",
+        "done": true
+      },
+      {
+        "text": "No prerequisites: open on main",
+        "done": true
+      },
+      {
+        "text": "Main concept indicator bottom left",
+        "done": true
+      },
+      {
+        "text": "Figure fits between margins without clipping",
+        "done": true
+      },
+      {
+        "text": "Keyboard: Y, N, Right/Enter, Left, Esc",
+        "done": true
+      },
+      {
+        "text": "Check: walk L1 Yes to L2 cover",
+        "done": true
+      },
+      {
+        "text": "Check: L2 No to revealed",
+        "done": true
+      },
+      {
+        "text": "Check: Next to main, no Next",
+        "done": true
+      },
+      {
+        "text": "Check: keyboard only",
+        "done": true
+      },
+      {
+        "text": "Check: 1024 x 640",
+        "done": true
+      },
+      {
+        "text": "Check: 1920 x 1080",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:03:59.531Z"
+  },
+  "S-5": {
+    "at": "2026-11-19T21:05:20.887Z",
+    "items": [
+      {
+        "text": "Render {term} marks as underlined blue terms",
+        "done": true
+      },
+      {
+        "text": "Render [n] as small reference numbers, kept with their word",
+        "done": true
+      },
+      {
+        "text": "Popup helper: anchor, arrow, flip, shift inside window",
+        "done": true
+      },
+      {
+        "text": "Term popup: name, definition, part chip, sources",
+        "done": true
+      },
+      {
+        "text": "Part chip highlights the part in the figure",
+        "done": true
+      },
+      {
+        "text": "Reference popup: title, kind, link",
+        "done": true
+      },
+      {
+        "text": "One popup at a time; outside click and Esc close",
+        "done": true
+      },
+      {
+        "text": "Keyboard: terms and references are focusable",
+        "done": true
+      },
+      {
+        "text": "Styles for terms, references, popups (both themes)",
+        "done": true
+      },
+      {
+        "text": "Check: every L1 term opens",
+        "done": true
+      },
+      {
+        "text": "Check: A3 chip highlights A3",
+        "done": true
+      },
+      {
+        "text": "Check: edge terms stay visible",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:05:20.887Z"
+  },
+  "S-6": {
+    "at": "2026-11-19T21:06:37.092Z",
+    "items": [
+      {
+        "text": "Part click opens its explainer popup on the part",
+        "done": true
+      },
+      {
+        "text": "Arrow points at the part (right side, flips left)",
+        "done": true
+      },
+      {
+        "text": "Explainer: tag, name, what, connects chips, sources",
+        "done": true
+      },
+      {
+        "text": "Blue outline only on hover, focus or open",
+        "done": true
+      },
+      {
+        "text": "Same-level chip opens that part",
+        "done": true
+      },
+      {
+        "text": "Cross-level chip jumps to that level and opens the part",
+        "done": true
+      },
+      {
+        "text": "Back returns to the part you came from",
+        "done": true
+      },
+      {
+        "text": "Paragraph chips open the part explainer too",
+        "done": true
+      },
+      {
+        "text": "Tab moves through parts in tag order",
+        "done": true
+      },
+      {
+        "text": "Enter opens, Esc closes",
+        "done": true
+      },
+      {
+        "text": "Accessible name: tag and caption",
+        "done": true
+      },
+      {
+        "text": "Popup styles in both themes",
+        "done": true
+      },
+      {
+        "text": "Check: C2 explainer points at C2",
+        "done": true
+      },
+      {
+        "text": "Check: L2 B1 chip opens L2 at B1, Back returns",
+        "done": true
+      },
+      {
+        "text": "Check: keyboard reaches and opens all parts",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:06:37.092Z"
+  },
+  "S-7": {
+    "at": "2026-11-19T21:07:51.643Z",
+    "items": [
+      {
+        "text": "Motion player per figure",
+        "done": true
+      },
+      {
+        "text": "Tape: empty slot pulses",
+        "done": true
+      },
+      {
+        "text": "Bars: top bar fills",
+        "done": true
+      },
+      {
+        "text": "Chip: token or call travels along its connection",
+        "done": true
+      },
+      {
+        "text": "List: newest slot slides in",
+        "done": true
+      },
+      {
+        "text": "Lamp: red to green",
+        "done": true
+      },
+      {
+        "text": "Flow paths: dashes move",
+        "done": true
+      },
+      {
+        "text": "Play order by marker number",
+        "done": true
+      },
+      {
+        "text": "Loop while the figure is on screen",
+        "done": true
+      },
+      {
+        "text": "Pause while any popup is open",
+        "done": true
+      },
+      {
+        "text": "Pause / play control with the figure",
+        "done": true
+      },
+      {
+        "text": "Reduce motion: start paused",
+        "done": true
+      },
+      {
+        "text": "Check: both figures loop 3 parts in order",
+        "done": true
+      },
+      {
+        "text": "Check: reduce motion",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:07:51.643Z"
+  },
+  "S-8": {
+    "at": "2026-11-19T21:08:40.422Z",
+    "items": [
+      {
+        "text": "Both palettes as CSS variables",
+        "done": true
+      },
+      {
+        "text": "Follow the system setting by default",
+        "done": true
+      },
+      {
+        "text": "Toggle in the bottom bar",
+        "done": true
+      },
+      {
+        "text": "Remember the choice for the session",
+        "done": true
+      },
+      {
+        "text": "Contrast check script (WCAG AA)",
+        "done": true
+      },
+      {
+        "text": "Fix colours that fail AA",
+        "done": true
+      },
+      {
+        "text": "Screenshot every page in light",
+        "done": true
+      },
+      {
+        "text": "Screenshot every page in dark",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:08:40.422Z"
+  },
+  "S-10": {
+    "at": "2026-11-19T21:09:16.556Z",
+    "items": [
+      {
+        "text": "Export command writes one HTML file",
+        "done": true
+      },
+      {
+        "text": "Reader, figures and data inline",
+        "done": true
+      },
+      {
+        "text": "No network requests besides source links",
+        "done": true
+      },
+      {
+        "text": "Fonts: system stack only, nothing to fetch",
+        "done": true
+      },
+      {
+        "text": "Invalid document: export fails with validator messages",
+        "done": true
+      },
+      {
+        "text": "Size under 2 MB",
+        "done": true
+      },
+      {
+        "text": "Check: opens from file:// with the network off",
+        "done": true
+      },
+      {
+        "text": "Check: Chrome",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:09:16.556Z"
+  },
+  "S-13": {
+    "at": "2026-11-19T21:13:15.080Z",
+    "items": [
+      {
+        "text": "Validator: a term defined on two pages fails with both paths",
+        "done": true
+      },
+      {
+        "text": "Validator: a paragraph term may use an earlier page's definition",
+        "done": true
+      },
+      {
+        "text": "Validator: a later page's definition cannot serve an earlier page",
+        "done": true
+      },
+      {
+        "text": "Validator: shared sentence (6+ words) across pages fails with both paths",
+        "done": true
+      },
+      {
+        "text": "Validator: two pages with the same figure fail",
+        "done": true
+      },
+      {
+        "text": "Reader: term popup falls back to the earlier page's definition, labelled",
+        "done": true
+      },
+      {
+        "text": "Reader: its part chip and sources come from that page",
+        "done": true
+      },
+      {
+        "text": "Fixture: L2 drops its own 'tokens'",
+        "done": true
+      },
+      {
+        "text": "Fixture: main drops 'tools', 'context window', 'tool call', 'summarized' copies",
+        "done": true
+      },
+      {
+        "text": "Test: duplicate term",
+        "done": true
+      },
+      {
+        "text": "Test: copied sentence",
+        "done": true
+      },
+      {
+        "text": "Test: duplicate figure",
+        "done": true
+      },
+      {
+        "text": "Test: fixture passes",
+        "done": true
+      },
+      {
+        "text": "Check: main page L2 terms show L2's definitions",
+        "done": true
+      },
+      {
+        "text": "Typecheck and tests",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      }
+    ],
+    "seen": "2026-11-19T21:13:15.080Z"
+  },
+  "S-12": {
+    "at": "2026-11-19T21:31:40.309Z",
+    "items": [
+      {
+        "text": "Plan the three levels (req 1)",
+        "done": true
+      },
+      {
+        "text": "Golden-rule pass on the plan",
+        "done": true
+      },
+      {
+        "text": "Write docs/gps.ade.json",
+        "done": true
+      },
+      {
+        "text": "Design the three figures",
+        "done": true
+      },
+      {
+        "text": "Validate",
+        "done": true
+      },
+      {
+        "text": "Check links",
+        "done": true
+      },
+      {
+        "text": "Draw the figures on S-12",
+        "done": true
+      },
+      {
+        "text": "Figures approved (D-12)",
+        "done": true
+      },
+      {
+        "text": "Export and walk all 3 levels",
+        "done": true
+      },
+      {
+        "text": "Re-run validate, links, tests and tsc",
+        "done": true
+      },
+      {
+        "text": "Record checks",
+        "done": true
+      },
+      {
+        "text": "Close S-12",
+        "done": false
+      }
+    ]
+  },
+  "S-11": {
+    "at": "2026-11-19T21:31:50.068Z",
+    "items": [
+      {
+        "text": "Author the GPS document with the ade-author skill",
+        "done": true
+      },
+      {
+        "text": "Validator prints valid",
+        "done": true
+      },
+      {
+        "text": "Link check: 10 of 10 resolve",
+        "done": true
+      },
+      {
+        "text": "Record the D-11 check",
+        "done": true
+      },
+      {
+        "text": "Close S-11",
+        "done": false
+      }
+    ]
+  },
+  "S-14": {
+    "at": "2026-11-19T21:34:12.272Z",
+    "items": [
+      {
+        "text": "Read the reader's page flow",
+        "done": true
+      },
+      {
+        "text": "Add saidNo to the reader, set on each cover answer",
+        "done": true
+      },
+      {
+        "text": "Extract nextPage(): after a No, Next lands on the next level's page",
+        "done": true
+      },
+      {
+        "text": "Reader test for both paths",
+        "done": true
+      },
+      {
+        "text": "npm test (29 pass) and tsc",
+        "done": true
+      },
+      {
+        "text": "Re-export dist/gps.html and dist/ai-coding-agent.html",
+        "done": true
+      },
+      {
+        "text": "Try both paths in the browser",
+        "done": true
+      },
+      {
+        "text": "Record checks and close",
+        "done": true
+      }
+    ]
+  }
+}

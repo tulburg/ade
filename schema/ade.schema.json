@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ade.local/schema/ade.schema.json",
+  "title": "ADE document",
+  "description": "One ADE document: a main concept and up to two prerequisite levels, in reading order. Cross-reference rules (tags exist, word limits, defined terms) are checked by src/format/validate.ts on top of this schema.",
+  "type": "object",
+  "required": ["ade", "main", "levels"],
+  "additionalProperties": false,
+  "properties": {
+    "ade": { "description": "Format version.", "const": 1 },
+    "main": { "$ref": "#/$defs/main" },
+    "levels": {
+      "description": "Prerequisite levels in reading order, at most 2.",
+      "type": "array",
+      "maxItems": 2,
+      "items": { "$ref": "#/$defs/level" }
+    }
+  },
+  "$defs": {
+    "main": {
+      "description": "The main concept. It has no cover question.",
+      "type": "object",
+      "required": ["title", "paragraph", "terms", "sources", "figure"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "$ref": "#/$defs/text" },
+        "paragraph": { "$ref": "#/$defs/paragraph" },
+        "terms": { "$ref": "#/$defs/terms" },
+        "sources": { "$ref": "#/$defs/sources" },
+        "figure": { "$ref": "#/$defs/figure" }
+      }
+    },
+    "level": {
+      "description": "A prerequisite level, opened by its cover question.",
+      "type": "object",
+      "required": ["id", "question", "title", "paragraph", "terms", "sources", "figure"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "enum": ["L1", "L2"] },
+        "question": { "type": "string", "pattern": "^Do you fully understand .+\\?$" },
+        "title": { "$ref": "#/$defs/text" },
+        "paragraph": { "$ref": "#/$defs/paragraph" },
+        "terms": { "$ref": "#/$defs/terms" },
+        "sources": { "$ref": "#/$defs/sources" },
+        "figure": { "$ref": "#/$defs/figure" }
+      }
+    },
+    "text": { "type": "string", "minLength": 1 },
+    "paragraph": {
+      "description": "Plain text with marks: {word} is a term defined in terms, [n] is a reference to sources[n-1].",
+      "type": "string",
+      "minLength": 1
+    },
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "definition", "sources"],
+        "additionalProperties": false,
+        "properties": {
+          "term": { "description": "The text inside {} in the paragraph, matched case-insensitively.", "$ref": "#/$defs/text" },
+          "definition": { "$ref": "#/$defs/text" },
+          "part": { "description": "Tag of the figure part this term maps to, on this level or as 'L1 A2'.", "$ref": "#/$defs/tagRef" },
+          "sources": { "$ref": "#/$defs/sourceRefs" }
+        }
+      }
+    },
+    "sources": {
+      "description": "Numbered from 1 in this order; [1] in the paragraph is the first.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "kind", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "#/$defs/text" },
+          "kind": { "enum": ["doc", "pdf", "paper", "video", "page"] },
+          "url": { "type": "string", "pattern": "^https?://" }
+        }
+      }
+    },
+    "sourceRefs": {
+      "description": "1-based numbers into this level's sources.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "integer", "minimum": 1 }
+    },
+    "tag": { "type": "string", "pattern": "^[A-Z][0-9]{1,2}$" },
+    "tagRef": {
+      "description": "A tag on this level ('C1') or on another level ('L1 A2', 'main C2').",
+      "type": "string",
+      "pattern": "^((L[12]|main) )?[A-Z][0-9]{1,2}$"
+    },
+    "figure": {
+      "description": "Parts placed on a grid 1000 units wide (D-5); the kit draws them where they are.",
+      "type": "object",
+      "required": ["width", "height", "label", "parts", "connections"],
+      "additionalProperties": false,
+      "properties": {
+        "width": { "const": 1000 },
+        "height": { "type": "number", "minimum": 100, "maximum": 1000 },
+        "label": { "description": "Accessible description of the whole figure.", "$ref": "#/$defs/text" },
+        "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/part" } },
+        "connections": { "type": "array", "items": { "$ref": "#/$defs/connection" } }
+      }
+    },
+    "part": {
+      "description": "A part of the figure. With a tag it is clickable and needs a caption and an explainer.",
+      "type": "object",
+      "required": ["id", "kind", "x", "y", "w", "h"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "kind": { "description": "A part kind from the figure kit's vocabulary (S-9).", "type": "string", "pattern": "^[a-z][a-z-]*$" },
+        "x": { "type": "number", "minimum": 0 },
+        "y": { "type": "number", "minimum": 0 },
+        "w": { "type": "number", "exclusiveMinimum": 0 },
+        "h": { "type": "number", "exclusiveMinimum": 0 },
+        "props": { "description": "Kind-specific drawing data (labels, values), defined by the kit.", "type": "object" },
+        "tag": { "$ref": "#/$defs/tag" },
+        "corner": { "enum": ["tl", "tr"] },
+        "caption": { "$ref": "#/$defs/text" },
+        "explainer": { "$ref": "#/$defs/explainer" },
+        "motion": { "$ref": "#/$defs/motion" }
+      }
+    },
+    "explainer": {
+      "type": "object",
+      "required": ["name", "what", "connects", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "$ref": "#/$defs/text" },
+        "what": { "$ref": "#/$defs/text" },
+        "connects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["tag", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "tag": { "$ref": "#/$defs/tagRef" },
+              "text": { "$ref": "#/$defs/text" }
+            }
+          }
+        },
+        "sources": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "motion": {
+      "description": "This part moves. At most 3 per figure, played in order.",
+      "type": "object",
+      "required": ["order", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "order": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "description": { "$ref": "#/$defs/text" }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "required": ["from", "to", "points"],
+      "additionalProperties": false,
+      "properties": {
+        "from": { "description": "Part id.", "type": "string" },
+        "to": { "description": "Part id.", "type": "string" },
+        "points": {
+          "description": "The path on the grid, as [x, y] pairs, start to end.",
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } }
+        },
+        "flow": { "description": "Drawn as a moving (red) path.", "type": "boolean" },
+        "note": { "$ref": "#/$defs/text" },
+        "noteAt": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } }
+      }
+    }
+  }
+}
